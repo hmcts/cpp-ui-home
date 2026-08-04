@@ -7,7 +7,7 @@ import {
   ActivationStart,
   Event,
   provideRouter,
-  Router,
+  Router
 } from '@angular/router';
 import { provideCPPApplicationEnvironment } from '@cpp/application';
 import { HeaderNavItem } from '@cpp/application';
@@ -15,7 +15,7 @@ import { provideCppCoreHttpServices } from '@cpp/core';
 import {
   UsersGroupsActions,
   RolePermission,
-  provideUserGroupsEnvironmentContext,
+  provideUserGroupsEnvironmentContext
 } from '@cpp/users-groups';
 import { provideEffects } from '@ngrx/effects';
 import { provideStore, Store } from '@ngrx/store';
@@ -40,16 +40,16 @@ describe('AppContainerComponent', () => {
         provideUserGroupsEnvironmentContext(),
         provideCPPApplicationEnvironment({ production: false }),
         provideEffects([]),
-        provideCppCoreHttpServices(),
-      ],
+        provideCppCoreHttpServices()
+      ]
     })
       .overrideComponent(AppContainerComponent, {
         remove: {
-          imports: [AppLayoutComponent],
+          imports: [AppLayoutComponent]
         },
         add: {
-          imports: [AppLayoutMockComponent],
-        },
+          imports: [AppLayoutMockComponent]
+        }
       })
       .compileComponents();
 
@@ -63,8 +63,8 @@ describe('AppContainerComponent', () => {
           apiRoot: '*',
           idamLogoutPage: '/logout',
           idamServicesPage: '/services',
-          idamProfilePage: '/profile',
-        },
+          idamProfilePage: '/profile'
+        }
       })
     );
 
@@ -107,9 +107,9 @@ describe('AppContainerComponent', () => {
         permissions: [
           {
             object: 'CP Search',
-            action: 'View',
-          },
-        ] as RolePermission[],
+            action: 'View'
+          }
+        ] as RolePermission[]
       })
     );
 
@@ -123,7 +123,7 @@ describe('AppContainerComponent', () => {
       .componentInstance.search.emit('*');
 
     expect(router.navigate).toHaveBeenCalledWith(['/search'], {
-      queryParams: { caseReference: '*' },
+      queryParams: { reference: '*' }
     });
   });
 });
@@ -137,7 +137,7 @@ describe('AppContainerComponent', () => {
     <br />
     searchEnabled: {{ searchEnabled() ? 'Yes' : 'No' }}
   `,
-  imports: [JsonPipe],
+  imports: [JsonPipe]
 })
 class AppLayoutMockComponent {
   activity = input(false);

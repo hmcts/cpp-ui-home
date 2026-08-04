@@ -20,7 +20,7 @@ import { AsyncPipe } from '@angular/common';
       (search)="handleSearch($event)"
     />
   `,
-  imports: [AppLayoutComponent, AsyncPipe],
+  imports: [AppLayoutComponent, AsyncPipe]
 })
 export class AppContainerComponent {
   accessibilityUrl$: Observable<string>;
@@ -46,8 +46,8 @@ export class AppContainerComponent {
               href: 'javascript:void(0)',
               onClick: () => {
                 this.router.navigate(['/search'], { queryParams: {} });
-              },
-            },
+              }
+            }
           ];
         }
         if (config) {
@@ -55,20 +55,20 @@ export class AppContainerComponent {
             ...navItems,
             {
               title: 'Home',
-              href: config.appUrl,
+              href: config.appUrl
             },
             {
               title: 'Your account',
-              href: config.idamProfilePage,
+              href: config.idamProfilePage
             },
             {
               title: 'Your services',
-              href: config.idamServicesPage,
+              href: config.idamServicesPage
             },
             {
               title: 'Sign out',
-              href: config.idamLogoutPage,
-            },
+              href: config.idamLogoutPage
+            }
           ];
         }
         return navItems;
@@ -79,14 +79,14 @@ export class AppContainerComponent {
       store.pipe(select(getHasApiActivity), debounceTime(1), startWith(false)),
       router.events.pipe(
         filter(
-          (event) => event instanceof RouteConfigLoadStart || event instanceof RouteConfigLoadEnd
+          event => event instanceof RouteConfigLoadStart || event instanceof RouteConfigLoadEnd
         ),
-        map((event) => !!(event instanceof RouteConfigLoadStart)),
+        map(event => !!(event instanceof RouteConfigLoadStart)),
         startWith(false)
-      ),
+      )
     ]).pipe(map(([hasApiActivity, isBeingLazyLoaded]) => hasApiActivity || isBeingLazyLoaded));
 
-    router.events.pipe(filter((event) => event instanceof ActivationStart)).subscribe((event) => {
+    router.events.pipe(filter(event => event instanceof ActivationStart)).subscribe(event => {
       if (
         (event as ActivationStart).snapshot.data &&
         (event as ActivationStart).snapshot.data.title
@@ -99,11 +99,11 @@ export class AppContainerComponent {
 
     this.accessibilityUrl$ = store.pipe(
       select(getAppConfig),
-      map((config) => `${config!.appUrl}/accessibility`)
+      map(config => `${config!.appUrl}/accessibility`)
     );
   }
 
-  handleSearch(caseReference: string) {
-    this.router.navigate(['/search'], { queryParams: { caseReference } });
+  handleSearch(reference: string) {
+    this.router.navigate(['/search'], { queryParams: { reference } });
   }
 }

@@ -11,7 +11,7 @@ import { SearchActions } from '../../actions/index';
 import { CaseStatus, UnifiedSearchCase } from '../../search.interfaces';
 import {
   SearchUnifiedCasesParams,
-  UnifiedSearchService,
+  UnifiedSearchService
 } from '../../services/unified-search.service';
 import { SearchGuard } from '../search.guard';
 
@@ -35,16 +35,16 @@ describe('SearchGuard', () => {
         {
           provide: UnifiedSearchService,
           useValue: {
-            searchCases,
-          },
+            searchCases
+          }
         },
         {
           provide: Router,
           useValue: {
-            navigate,
-          },
-        },
-      ],
+            navigate
+          }
+        }
+      ]
     });
 
     guard = TestBed.inject<SearchGuard>(SearchGuard);
@@ -56,7 +56,7 @@ describe('SearchGuard', () => {
   const defaultQueryParams = {
     caseStatus: ['ACTIVE'] as CaseStatus[],
     applicationType: 'Appeal against grant of bail',
-    caseReference: 'CASE_REFERENCE',
+    reference: null,
     hearingDateFrom: '2019-01-01',
     hearingDateTo: '2019-01-08',
     hearingTypeId: 'TYPE0001',
@@ -72,11 +72,11 @@ describe('SearchGuard', () => {
     crownCourt: 'true',
     startFrom: '20',
     boxWorkHearing: 'true',
-    boxWorkVirtualHearing: 'true',
+    boxWorkVirtualHearing: 'true'
   };
 
   const createActivatedRouteSnapshot = (
-    queryParams: { [key: string]: string | CaseStatus[] } = {}
+    queryParams: { [key: string]: string | CaseStatus[] | null } = {}
   ) => {
     const snapshot = new ActivatedRouteSnapshot();
     snapshot.queryParams = queryParams;
@@ -90,7 +90,7 @@ describe('SearchGuard', () => {
       const snapshot = createActivatedRouteSnapshot();
       const activate$ = guard.canActivate(snapshot);
 
-      activate$.subscribe((didResolve) => {
+      activate$.subscribe(didResolve => {
         expect(didResolve).toBe(false);
         expect(navigate).toHaveBeenCalledWith(['/unauthorised-access']);
       });
@@ -104,9 +104,9 @@ describe('SearchGuard', () => {
           permissions: [
             {
               object: 'CP Search',
-              action: 'View',
-            },
-          ] as RolePermission[],
+              action: 'View'
+            }
+          ] as RolePermission[]
         })
       );
     });
@@ -117,7 +117,7 @@ describe('SearchGuard', () => {
       const snapshot = createActivatedRouteSnapshot();
       const activate$ = guard.canActivate(snapshot);
 
-      activate$.subscribe((didResolve) => {
+      activate$.subscribe(didResolve => {
         expect(didResolve).toBe(true);
         expect(store.dispatch).toHaveBeenCalledWith(
           SearchActions.resetSearch({ isBoxWorkHearing: false })
@@ -131,50 +131,138 @@ describe('SearchGuard', () => {
       const snapshot = createActivatedRouteSnapshot({ unknown: '*' } as any);
       const activate$ = guard.canActivate(snapshot);
 
-      activate$.subscribe((didResolve) => {
+      activate$.subscribe(didResolve => {
         expect(didResolve).toBe(true);
         expect(store.dispatch).toHaveBeenCalledWith(
           SearchActions.loadUnifiedSearchCasesSuccess({
             params: { pageSize: 10 },
             cases: [],
-            totalResults: 0,
+            totalResults: 0
           })
         );
       });
     });
 
-    it('should activate after searching the cases remotely', () => {
+    it.each([
+      // Values that are obviously not a PNC ID.
+      '123456',
+      'TEST',
+      'SJ123456789',
+      // Values which are almost valid PNC IDs.
+      '21234567T',
+      '2012345678T',
+      '211234567TQ',
+      '2011234567T',
+      '201712345678T',
+      '201234567TQ',
+      '171234567I',
+      '171234567O',
+      '171234567S',
+      '20171234567I',
+      '20171234567O',
+      '20171234567S'
+    ])(
+      'should activate when searching by case reference "%s" (eg. not a PNC ID)',
+      inputCaseReference => {
+        expect.assertions(3);
+
+        const queryParams = {
+          ...defaultQueryParams,
+          reference: inputCaseReference
+        };
+
+        const snapshot = createActivatedRouteSnapshot(queryParams);
+        const searchResult = {
+          totalResults: 1,
+          cases: [
+            {
+              caseId: '*'
+            }
+          ] as UnifiedSearchCase[]
+        };
+        searchCases.mockReturnValue(of(searchResult));
+
+        guard.canActivate(snapshot).subscribe(didResolve => {
+          const params: SearchUnifiedCasesParams = {
+            ...omit(['reference'], queryParams),
+            caseReference: inputCaseReference,
+            sortBySjpNoticeServed:
+              queryParams.sortBySjpNoticeServed as SearchUnifiedCasesParams['sortBySjpNoticeServed'],
+            boxWorkHearing: true,
+            boxWorkVirtualHearing: true,
+            sjp: true,
+            magistrateCourt: true,
+            crownCourt: true,
+            startFrom: 20,
+            pageSize: 10
+          };
+
+          expect(didResolve).toBe(true);
+          expect(searchCases).toHaveBeenCalledWith({
+            ...params,
+            excludeCompletedApplications: true
+          });
+          expect(store.dispatch).toHaveBeenCalledWith(
+            SearchActions.loadUnifiedSearchCasesSuccess({ ...searchResult, params })
+          );
+        });
+      }
+    );
+
+    it.each([
+      // Delimiter may be "/", "-", "_", ".", "'", or omitted.
+      // Input does not include century; consider current and previous centuries:
+      '171234567T',
+      '17/1234567T',
+      '17-1234567T',
+      '17_1234567T',
+      '17.1234567T',
+      "17'1234567T",
+      // Input is an exact year; use as-is:
+      '20171234567T',
+      '2017/1234567T',
+      '2017-1234567T',
+      '2017_1234567T',
+      '2017.1234567T',
+      "2017'1234567T"
+    ])('should activate when searching by PNC ID "%s"', inputPncId => {
       expect.assertions(3);
 
-      const snapshot = createActivatedRouteSnapshot(defaultQueryParams);
+      const queryParams = {
+        ...defaultQueryParams,
+        reference: inputPncId
+      };
+
+      const snapshot = createActivatedRouteSnapshot(queryParams);
       const searchResult = {
         totalResults: 1,
         cases: [
           {
-            caseId: '*',
-          },
-        ] as UnifiedSearchCase[],
+            caseId: '*'
+          }
+        ] as UnifiedSearchCase[]
       };
       searchCases.mockReturnValue(of(searchResult));
 
-      guard.canActivate(snapshot).subscribe((didResolve) => {
+      guard.canActivate(snapshot).subscribe(didResolve => {
         const params: SearchUnifiedCasesParams = {
-          ...defaultQueryParams,
+          ...omit(['reference'], queryParams),
+          pncId: inputPncId,
           sortBySjpNoticeServed:
-            defaultQueryParams.sortBySjpNoticeServed as SearchUnifiedCasesParams['sortBySjpNoticeServed'],
+            queryParams.sortBySjpNoticeServed as SearchUnifiedCasesParams['sortBySjpNoticeServed'],
           boxWorkHearing: true,
           boxWorkVirtualHearing: true,
           sjp: true,
           magistrateCourt: true,
           crownCourt: true,
           startFrom: 20,
-          pageSize: 10,
+          pageSize: 10
         };
 
         expect(didResolve).toBe(true);
         expect(searchCases).toHaveBeenCalledWith({
           ...params,
-          excludeCompletedApplications: true,
+          excludeCompletedApplications: true
         });
         expect(store.dispatch).toHaveBeenCalledWith(
           SearchActions.loadUnifiedSearchCasesSuccess({ ...searchResult, params })
@@ -189,7 +277,7 @@ describe('SearchGuard', () => {
       searchCases.mockReturnValue(
         of({
           totalResults: 0,
-          cases: [],
+          cases: []
         })
       );
       guard.canActivate(snapshot).subscribe(() => {
@@ -203,7 +291,7 @@ describe('SearchGuard', () => {
       const snapshot = createActivatedRouteSnapshot({ partyLastNameOrOrganisationName: '*' });
       searchCases.mockReturnValue(throwError(error));
 
-      guard.canActivate(snapshot).subscribe((didResolve) => {
+      guard.canActivate(snapshot).subscribe(didResolve => {
         expect(didResolve).toBe(false);
         expect(store.dispatch).toHaveBeenCalledWith(
           SearchActions.loadUnifiedSearchCasesError({ error })

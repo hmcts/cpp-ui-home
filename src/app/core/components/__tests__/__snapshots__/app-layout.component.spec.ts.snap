@@ -10,8 +10,8 @@ exports[`AppLayoutComponent should compile correctly 1`] = `
     <cpp-application-layout
       accessibilitylink="/accessibility"
       cookieslink="/cookies"
-      searchlabel="Search by case or application reference"
-      searchplaceholder="Search by reference"
+      searchlabel="Search by case reference, application reference or PNC ID"
+      searchplaceholder="Search by Reference or PNC ID"
       servicelink="/"
       servicename="Common Platform"
       termslink="/terms-and-conditions"
@@ -523,8 +523,8 @@ exports[`AppLayoutComponent should compile correctly when activity exists 1`] = 
     <cpp-application-layout
       accessibilitylink="/accessibility"
       cookieslink="/cookies"
-      searchlabel="Search by case or application reference"
-      searchplaceholder="Search by reference"
+      searchlabel="Search by case reference, application reference or PNC ID"
+      searchplaceholder="Search by Reference or PNC ID"
       servicelink="/"
       servicename="Common Platform"
       termslink="/terms-and-conditions"
@@ -1063,8 +1063,8 @@ exports[`AppLayoutComponent should compile correctly when search is enabled 1`] 
     <cpp-application-layout
       accessibilitylink="/accessibility"
       cookieslink="/cookies"
-      searchlabel="Search by case or application reference"
-      searchplaceholder="Search by reference"
+      searchlabel="Search by case reference, application reference or PNC ID"
+      searchplaceholder="Search by Reference or PNC ID"
       servicelink="/"
       servicename="Common Platform"
       termslink="/terms-and-conditions"
@@ -1285,11 +1285,11 @@ exports[`AppLayoutComponent should compile correctly when search is enabled 1`] 
                         class="pdk-searchbar"
                       >
                         <input
-                          aria-label="Search by case or application reference"
+                          aria-label="Search by case reference, application reference or PNC ID"
                           class="pdk-searchbar__input pdk-searchbar__input--borderless govuk-input"
                           id="searchbar_pdk-search-GENERATED_ID"
                           pdk-input=""
-                          placeholder="Search by reference"
+                          placeholder="Search by Reference or PNC ID"
                           type="text"
                         />
                         <button
@@ -1318,7 +1318,7 @@ exports[`AppLayoutComponent should compile correctly when search is enabled 1`] 
                             class="pdk-searchbar__label govuk-visually-hidden"
                             pdk-visually-hidden=""
                           >
-                             Search by case or application reference 
+                             Search by case reference, application reference or PNC ID 
                           </span>
                         </button>
                       </div>
