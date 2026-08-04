@@ -15,8 +15,8 @@ import { PdkMarginDirective } from '@cpp/pdk';
       [searchEnabled]="searchEnabled()"
       serviceLink="/"
       serviceName="Common Platform"
-      searchPlaceholder="Search by reference"
-      searchLabel="Search by case or application reference"
+      searchPlaceholder="Search by Reference or PNC ID"
+      searchLabel="Search by case reference, application reference or PNC ID"
       (search)="search.emit($event)"
       termsLink="/terms-and-conditions"
     >
@@ -25,7 +25,7 @@ import { PdkMarginDirective } from '@cpp/pdk';
       </div>
     </cpp-application-layout>
   `,
-  imports: [CppApplicationLayoutComponent, RouterOutlet, PdkMarginDirective],
+  imports: [CppApplicationLayoutComponent, RouterOutlet, PdkMarginDirective]
 })
 export class AppLayoutComponent {
   readonly activity = input(false);

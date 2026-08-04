@@ -9,6 +9,7 @@ export interface SearchUnifiedCasesParams {
   pageSize?: number;
   startFrom?: number;
   caseReference?: string;
+  pncId?: string;
   partyTypes?: string;
   partyDateOfBirth?: string;
   partyFirstAndOrMiddleName?: string;
@@ -47,15 +48,15 @@ export class UnifiedSearchService {
         requestType: 'application/vnd.unifiedsearch.query.cases+json',
         params: new HttpParams({
           fromObject: Object.keys(params)
-            .filter((key) => params[key as keyof SearchUnifiedCasesParams] !== undefined)
+            .filter(key => params[key as keyof SearchUnifiedCasesParams] !== undefined)
             .reduce(
               (queryParams, key) => ({
                 ...queryParams,
-                [key]: String(params[key as keyof SearchUnifiedCasesParams]),
+                [key]: String(params[key as keyof SearchUnifiedCasesParams])
               }),
               {} as { [key: string]: string }
-            ),
-        }),
+            )
+        })
       })
       .pipe(map(patchMissingParties));
   }
@@ -65,6 +66,6 @@ const patchMissingParties = ({ totalResults, cases }: UnifiedSearchCaseResults) 
   totalResults,
   cases: cases.map(({ parties, ...rest }) => ({
     ...rest,
-    parties: parties || [],
-  })),
+    parties: parties || []
+  }))
 });

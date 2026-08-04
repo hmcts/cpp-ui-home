@@ -108,7 +108,7 @@ exports[`SearchFormComponent should compile correctly 1`] = `
       </pdk-form-group>
       <pdk-form-field
         class="govuk-!-margin-bottom-4"
-        label="Reference"
+        label="Reference or PNC ID"
         labeltype="small"
         pdk-margin-bottom="4"
       >
@@ -119,7 +119,7 @@ exports[`SearchFormComponent should compile correctly 1`] = `
             class="govuk-label govuk-label--s"
             for="pdk-form-control-undefined-GENERATED_ID"
           >
-             Reference 
+             Reference or PNC ID 
           </label>
           <input
             autocomplete="off"
@@ -1037,7 +1037,7 @@ exports[`SearchFormComponent should compile correctly when there are initial val
       </pdk-form-group>
       <pdk-form-field
         class="govuk-!-margin-bottom-4"
-        label="Reference"
+        label="Reference or PNC ID"
         labeltype="small"
         pdk-margin-bottom="4"
       >
@@ -1048,7 +1048,7 @@ exports[`SearchFormComponent should compile correctly when there are initial val
             class="govuk-label govuk-label--s"
             for="pdk-form-control-undefined-GENERATED_ID"
           >
-             Reference 
+             Reference or PNC ID 
           </label>
           <input
             autocomplete="off"
@@ -2008,7 +2008,7 @@ exports[`SearchFormComponent should display the checkbox for timed appointments 
       </pdk-form-group>
       <pdk-form-field
         class="govuk-!-margin-bottom-4"
-        label="Reference"
+        label="Reference or PNC ID"
         labeltype="small"
         pdk-margin-bottom="4"
       >
@@ -2019,7 +2019,7 @@ exports[`SearchFormComponent should display the checkbox for timed appointments 
             class="govuk-label govuk-label--s"
             for="pdk-form-control-undefined-GENERATED_ID"
           >
-             Reference 
+             Reference or PNC ID 
           </label>
           <input
             autocomplete="off"

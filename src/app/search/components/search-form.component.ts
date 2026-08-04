@@ -6,7 +6,7 @@ import {
   linkedSignal,
   ViewChild,
   ViewEncapsulation,
-  output,
+  output
 } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import {
@@ -22,7 +22,7 @@ import {
   PdkForm,
   PdkTextInput,
   PdkSelectComponent,
-  ValidationError,
+  ValidationError
 } from '@cpp/pdk';
 import {
   ApplicationTypeAutosuggestComponent,
@@ -32,7 +32,7 @@ import {
   OrganisationUnit,
   OrganisationUnitAutosuggestComponent,
   Prosecutor,
-  ProsecutorAutosuggestComponent,
+  ProsecutorAutosuggestComponent
 } from '@cpp/reference-data';
 import { parseFormValues } from '../../core/util/form';
 import { CaseStatus } from '../search.interfaces';
@@ -45,6 +45,7 @@ export interface SearchFormValues {
   caseStatus?: SearchUnifiedCasesParams['caseStatus'];
   applicationType?: CourtApplicationType;
   caseReference?: string;
+  pncId?: string;
   organisationUnit?: OrganisationUnit;
   hearingType?: HearingType;
   partyFirstAndOrMiddleName?: string;
@@ -95,10 +96,10 @@ export interface SearchFormValues {
         </fieldset>
       </pdk-form-group>
 
-      <pdk-form-field label="Reference" labelType="small" pdk-margin-bottom="4">
+      <pdk-form-field label="Reference or PNC ID" labelType="small" pdk-margin-bottom="4">
         <input
           type="text"
-          [ngModel]="valueRecord.caseReference"
+          [ngModel]="valueRecord.caseReference || valueRecord.pncId"
           name="caseReference"
           autocomplete="off"
           pdk-text-input
@@ -361,7 +362,7 @@ export interface SearchFormValues {
         display: flex;
         align-items: center;
       }
-    `,
+    `
   ],
   imports: [
     DatePipe,
@@ -381,8 +382,8 @@ export interface SearchFormValues {
     OrganisationUnitAutosuggestComponent,
     ProsecutorAutosuggestComponent,
     HearingTypeSelectComponent,
-    ApplicationTypeAutosuggestComponent,
-  ],
+    ApplicationTypeAutosuggestComponent
+  ]
 })
 export class SearchFormComponent {
   readonly initialValues = input<SearchFormValues | undefined>(undefined);
@@ -403,7 +404,7 @@ export class SearchFormComponent {
   partyTypeOptions: CheckboxOption<PartyType>[] = [
     { value: 'DEFENDANT', label: 'Defendant' },
     { value: 'RESPONDENT', label: 'Respondent' },
-    { value: 'APPLICANT', label: 'Applicant' },
+    { value: 'APPLICANT', label: 'Applicant' }
   ];
 
   sortBySjpNoticeServedOptions: {
@@ -411,12 +412,12 @@ export class SearchFormComponent {
     label: string;
   }[] = [
     { value: 'asc', label: 'Ascending' },
-    { value: 'desc', label: 'Descending' },
+    { value: 'desc', label: 'Descending' }
   ];
 
   caseStatusOptions: CheckboxOption<CaseStatus>[] = [
     { value: 'ACTIVE', label: 'Active' },
-    { value: 'INACTIVE', label: 'Inactive' },
+    { value: 'INACTIVE', label: 'Inactive' }
   ];
 
   handleClearFilters() {
@@ -434,7 +435,7 @@ export class SearchFormComponent {
         ? values.prosecutor
         : this.prosecutorInputText
         ? ({ shortName: this.prosecutorInputText } as Prosecutor)
-        : undefined,
+        : undefined
     });
     const {
       boxWorkHearing,
@@ -453,8 +454,8 @@ export class SearchFormComponent {
       this.errors.emit([
         {
           id: 'javascript:void(0)',
-          message: 'Add filters to find search results',
-        },
+          message: 'Add filters to find search results'
+        }
       ]);
     } else if (
       totalFormValues === 1 &&
@@ -464,8 +465,8 @@ export class SearchFormComponent {
       this.errors.emit([
         {
           id: 'javascript:void(0)',
-          message: 'Add another filter to find search results',
-        },
+          message: 'Add another filter to find search results'
+        }
       ]);
     } else {
       this.search.emit(filteredFormValues);

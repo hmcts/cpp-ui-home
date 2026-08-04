@@ -10,6 +10,8 @@ import { parseFormValues } from '../../core/util/form';
 import { getUserHasPermission } from '@cpp/users-groups';
 import { EXPECTED_HOME_USER_PERMISSIONS, HomeUserPermissions } from '../../config';
 
+const PNC_ID_PATTERN = /^(\d{2}(\d{2})?)[\/',.\-_]?(\d{7}[A-HJ-NP-RT-Z])$/i;
+
 @Injectable()
 export class SearchGuard {
   constructor(
@@ -19,15 +21,24 @@ export class SearchGuard {
     @Inject(EXPECTED_HOME_USER_PERMISSIONS) private expectedPermissions: HomeUserPermissions
   ) {}
 
+  private isPncId(reference?: string): boolean {
+    return !!reference && PNC_ID_PATTERN.test(reference.trim());
+  }
+
   searchWithParams(q: { [key: string]: any }) {
     const parseTrue = (value: string) => (value === 'true' ? true : undefined);
     const boxWorkHearing = parseTrue(q.boxWorkHearing);
     const boxWorkVirtualHearing = parseTrue(q.boxWorkVirtualHearing);
 
+    const reference = q.reference?.trim() || q.caseReference?.trim();
+    const referenceIsPncId = this.isPncId(reference);
     const rawParams: SearchUnifiedCasesParams = {
       caseStatus: q.caseStatus,
       applicationType: q.applicationType,
-      caseReference: q.caseReference,
+
+      caseReference: reference && !referenceIsPncId ? reference : undefined,
+      pncId: reference && referenceIsPncId ? reference : undefined,
+
       courtId: q.courtId,
       hearingDateFrom: q.hearingDateFrom,
       hearingDateTo: q.hearingDateTo,
@@ -51,7 +62,7 @@ export class SearchGuard {
       startFrom: q.startFrom ? Number(q.startFrom) : undefined,
       boxWorkHearing,
       boxWorkVirtualHearing,
-      excludeCompletedApplications: boxWorkHearing ? true : undefined,
+      excludeCompletedApplications: boxWorkHearing ? true : undefined
     };
     const filteredParams = parseFormValues(rawParams);
 
@@ -59,11 +70,11 @@ export class SearchGuard {
       const params = { ...filteredParams, pageSize: 10 } as SearchUnifiedCasesParams;
 
       return this.unifiedSearch.searchCases(params).pipe(
-        tap((result) =>
+        tap(result =>
           this.store.dispatch(SearchActions.loadUnifiedSearchCasesSuccess({ params, ...result }))
         ),
         mapTo(true),
-        catchError((error) => {
+        catchError(error => {
           this.store.dispatch(SearchActions.loadUnifiedSearchCasesError({ error }));
           return of(false);
         })
@@ -79,13 +90,13 @@ export class SearchGuard {
   canActivate({ queryParams }: ActivatedRouteSnapshot) {
     return this.store.pipe(
       map(getUserHasPermission([this.expectedPermissions.viewCpSearch])),
-      tap((canActivate) => {
+      tap(canActivate => {
         if (!canActivate) {
           this.router.navigate(['/unauthorised-access']);
         }
       }),
       take(1),
-      switchMap((canSearch) => (canSearch ? this.searchWithParams(queryParams) : of(false)))
+      switchMap(canSearch => (canSearch ? this.searchWithParams(queryParams) : of(false)))
     );
   }
 }
