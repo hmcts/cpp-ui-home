@@ -1,0 +1,726 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResultApplicationComponent should compile correctly 1`] = `
+<app-search-result-application-test
+  result={[Function Object]}
+  viewApplication={[Function Function]}
+>
+  <app-search-result-application>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-application-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-application-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            ARN GB987654321
+          </span>
+        </button>
+        <a
+          class="govuk-link"
+          data-test-id="view-application"
+          href="javascript:void(0)"
+          pdk-link=""
+        >
+          View application
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <dl>
+          <div
+            class="app-search-result__row"
+          >
+            <div
+              class="govuk-!-margin-right-2"
+              pdk-margin-right="2"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                pdk-visually-hidden=""
+              >
+                Application type
+              </dt>
+              <dd>
+                Application for witness summons
+              </dd>
+            </div>
+          </div>
+          <div
+            class="app-search-result__row app-search-result__row__appointmentTime"
+          >
+            <dt>
+              Appointment time
+            </dt>
+            <dd>
+              -
+            </dd>
+          </div>
+        </dl>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-application-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0"
+          id="app-search-result-application-content-GENERATED_ID"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Applicant
+                </dt>
+                <dd>
+                  Pyrami
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Respondents
+                </dt>
+                <dd>
+                  Scarlett MOORE, Joanne MURR
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Court
+                </dt>
+                <dd>
+                  Liverpool Magistrates' Court
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-application>
+</app-search-result-application-test>
+`;
+
+exports[`SearchResultApplicationComponent should display an overdue alert when a boxwork application is overdue 1`] = `
+<app-search-result-application-test
+  result={[Function Object]}
+  viewApplication={[Function Function]}
+>
+  <app-search-result-application>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-application-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-application-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            *
+          </span>
+        </button>
+        <a
+          class="govuk-link"
+          data-test-id="view-application"
+          href="javascript:void(0)"
+          pdk-link=""
+        >
+          View application
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <div
+          class="govuk-!-margin-top-4 govuk-!-margin-bottom-4"
+          data-test-id="overdue-notice"
+          pdk-margin-vertical="4"
+        >
+          <pdk-alert
+            icon=""
+          >
+            <div
+              class="pdk-alert pdk-alert--warning"
+              role="alert"
+            >
+              <div
+                class="pdk-alert__container"
+              >
+                <i
+                  aria-hidden="true"
+                  class="pdk-alert__icon pdk-alert__icon--alert"
+                  role="presentation"
+                />
+                <div
+                  class="pdk-alert__message"
+                >
+                  <div>
+                    Overdue
+                  </div>
+                </div>
+              </div>
+            </div>
+          </pdk-alert>
+        </div>
+        <dl>
+          <div
+            class="app-search-result__row"
+          >
+            <div
+              class="govuk-!-margin-right-2"
+              pdk-margin-right="2"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                pdk-visually-hidden=""
+              >
+                Application type
+              </dt>
+              <dd>
+                *
+              </dd>
+            </div>
+            <div>
+              <dt>
+                Due date
+              </dt>
+              <dd>
+                1 January 2020
+              </dd>
+            </div>
+          </div>
+          <div
+            class="app-search-result__row app-search-result__row__appointmentTime"
+          >
+            <dt>
+              Appointment time
+            </dt>
+            <dd>
+              -
+            </dd>
+          </div>
+        </dl>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-application-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0"
+          id="app-search-result-application-content-GENERATED_ID"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Applicant
+                </dt>
+                <dd>
+                  Pyrami
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Respondents
+                </dt>
+                <dd>
+                  Scarlett MOORE, Joanne MURR
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Court
+                </dt>
+                <dd>
+                  -
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-application>
+</app-search-result-application-test>
+`;
+
+exports[`SearchResultApplicationComponent should display an overdue alert when a boxwork application is overdue 2`] = `
+<app-search-result-application-test
+  result={[Function Object]}
+  viewApplication={[Function Function]}
+>
+  <app-search-result-application>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-application-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-application-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            *
+          </span>
+        </button>
+        <a
+          class="govuk-link"
+          data-test-id="view-application"
+          href="javascript:void(0)"
+          pdk-link=""
+        >
+          View application
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <dl>
+          <div
+            class="app-search-result__row"
+          >
+            <div
+              class="govuk-!-margin-right-2"
+              pdk-margin-right="2"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                pdk-visually-hidden=""
+              >
+                Application type
+              </dt>
+              <dd>
+                *
+              </dd>
+            </div>
+          </div>
+          <div
+            class="app-search-result__row app-search-result__row__appointmentTime"
+          >
+            <dt>
+              Appointment time
+            </dt>
+            <dd>
+              -
+            </dd>
+          </div>
+        </dl>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-application-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0"
+          id="app-search-result-application-content-GENERATED_ID"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Applicant
+                </dt>
+                <dd>
+                  Pyrami
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Respondents
+                </dt>
+                <dd>
+                  Scarlett MOORE, Joanne MURR
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Court
+                </dt>
+                <dd>
+                  -
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-application>
+</app-search-result-application-test>
+`;
+
+exports[`SearchResultApplicationComponent should display an overdue alert when a boxwork application is overdue 3`] = `
+<app-search-result-application-test
+  result={[Function Object]}
+  viewApplication={[Function Function]}
+>
+  <app-search-result-application>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-application-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-application-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            *
+          </span>
+        </button>
+        <a
+          class="govuk-link"
+          data-test-id="view-application"
+          href="javascript:void(0)"
+          pdk-link=""
+        >
+          View application
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <dl>
+          <div
+            class="app-search-result__row"
+          >
+            <div
+              class="govuk-!-margin-right-2"
+              pdk-margin-right="2"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                pdk-visually-hidden=""
+              >
+                Application type
+              </dt>
+              <dd>
+                *
+              </dd>
+            </div>
+            <div>
+              <dt>
+                Due date
+              </dt>
+              <dd>
+                1 January 2020
+              </dd>
+            </div>
+          </div>
+          <div
+            class="app-search-result__row app-search-result__row__appointmentTime"
+          >
+            <dt>
+              Appointment time
+            </dt>
+            <dd>
+              -
+            </dd>
+          </div>
+        </dl>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-application-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0"
+          id="app-search-result-application-content-GENERATED_ID"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Applicant
+                </dt>
+                <dd>
+                  Pyrami
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Respondents
+                </dt>
+                <dd>
+                  Scarlett MOORE, Joanne MURR
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Court
+                </dt>
+                <dd>
+                  -
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-application>
+</app-search-result-application-test>
+`;
+
+exports[`SearchResultApplicationComponent should display an overdue alert when a boxwork application is overdue 4`] = `
+<app-search-result-application-test
+  result={[Function Object]}
+  viewApplication={[Function Function]}
+>
+  <app-search-result-application>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-application-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-application-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            *
+          </span>
+        </button>
+        <a
+          class="govuk-link"
+          data-test-id="view-application"
+          href="javascript:void(0)"
+          pdk-link=""
+        >
+          View application
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <dl>
+          <div
+            class="app-search-result__row"
+          >
+            <div
+              class="govuk-!-margin-right-2"
+              pdk-margin-right="2"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                pdk-visually-hidden=""
+              >
+                Application type
+              </dt>
+              <dd>
+                *
+              </dd>
+            </div>
+            <div>
+              <dt>
+                Due date
+              </dt>
+              <dd>
+                22 January 2019
+              </dd>
+            </div>
+          </div>
+          <div
+            class="app-search-result__row app-search-result__row__appointmentTime"
+          >
+            <dt>
+              Appointment time
+            </dt>
+            <dd>
+               10:00 
+            </dd>
+          </div>
+        </dl>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-application-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0"
+          id="app-search-result-application-content-GENERATED_ID"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Applicant
+                </dt>
+                <dd>
+                  Pyrami
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Respondents
+                </dt>
+                <dd>
+                  Scarlett MOORE, Joanne MURR
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Court
+                </dt>
+                <dd>
+                  -
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-application>
+</app-search-result-application-test>
+`;

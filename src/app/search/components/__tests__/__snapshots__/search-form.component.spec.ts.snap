@@ -1,0 +1,2870 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchFormComponent should compile correctly 1`] = `
+<app-search-form-test
+  handleErrors={[Function Function]}
+  resetForm={[Function Function]}
+  search={[Function Function]}
+>
+  <app-search-form>
+    <form
+      class="ng-untouched ng-pristine ng-valid"
+      novalidate=""
+      pdk-form=""
+    >
+      <div
+        data-test-id="form-actions-top"
+      >
+        <pdk-form-group
+          class="app-search__form-actions govuk-!-margin-bottom-6 pdk-form-group"
+          pdk-margin-bottom="6"
+        >
+          <button
+            class="govuk-!-margin-0 govuk-button"
+            pdk-button=""
+            pdk-margin="0"
+            type="submit"
+          >
+            Apply filters
+          </button>
+          <a
+            class="govuk-!-margin-left-3 govuk-!-margin-right-3 govuk-link"
+            data-test-id="clear-filters"
+            href="javascript:void(0)"
+            pdk-link=""
+            pdk-margin-horizontal="3"
+          >
+            Clear filters
+          </a>
+        </pdk-form-group>
+      </div>
+      <pdk-form-group
+        class="govuk-!-margin-bottom-4 pdk-form-group"
+        pdk-margin-bottom="4"
+      >
+        <fieldset
+          class="govuk-fieldset"
+          pdk-fieldset=""
+        >
+          <legend
+            class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            pdk-legend="small"
+          >
+            Case status
+          </legend>
+          <pdk-checkbox-group
+            checkboxtype="small"
+            class="ng-untouched ng-pristine ng-valid"
+            name="caseStatus"
+          >
+            <div
+              class="govuk-checkboxes"
+            >
+              <pdk-checkbox
+                class="govuk-checkboxes govuk-checkboxes--small"
+              >
+                <div
+                  class="govuk-checkboxes__item"
+                >
+                  <input
+                    class="govuk-checkboxes__input"
+                    id="pdk-checkbox-GENERATED_ID"
+                    name="pdk-checkbox-group-GENERATED_ID"
+                    type="checkbox"
+                    value="ACTIVE"
+                  />
+                  <label
+                    class="govuk-label govuk-checkboxes__label"
+                    for="pdk-checkbox-GENERATED_ID"
+                  >
+                     Active 
+                  </label>
+                </div>
+              </pdk-checkbox>
+              <pdk-checkbox
+                class="govuk-checkboxes govuk-checkboxes--small"
+              >
+                <div
+                  class="govuk-checkboxes__item"
+                >
+                  <input
+                    class="govuk-checkboxes__input"
+                    id="pdk-checkbox-GENERATED_ID"
+                    name="pdk-checkbox-group-GENERATED_ID"
+                    type="checkbox"
+                    value="INACTIVE"
+                  />
+                  <label
+                    class="govuk-label govuk-checkboxes__label"
+                    for="pdk-checkbox-GENERATED_ID"
+                  >
+                     Inactive 
+                  </label>
+                </div>
+              </pdk-checkbox>
+            </div>
+          </pdk-checkbox-group>
+        </fieldset>
+      </pdk-form-group>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-4"
+        label="Reference"
+        labeltype="small"
+        pdk-margin-bottom="4"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Reference 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="caseReference"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-3"
+        label="First name"
+        labeltype="small"
+        pdk-margin-bottom="3"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             First name 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="partyFirstAndOrMiddleName"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-3"
+        label="Last name or organisation"
+        labeltype="small"
+        pdk-margin-bottom="3"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Last name or organisation 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="partyLastNameOrOrganisationName"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <details
+        class="govuk-details"
+        pdk-details=""
+      >
+        <summary
+          class="govuk-details__summary"
+        >
+          <span
+            class="govuk-details__summary-text"
+          >
+            Select type
+          </span>
+        </summary>
+        <pdk-form-field
+          label="Type"
+          labeltype="none"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Type 
+              </legend>
+              <pdk-checkbox-group
+                checkboxtype="small"
+                class="ng-untouched ng-pristine ng-valid"
+                name="partyTypes"
+              >
+                <div
+                  class="govuk-checkboxes"
+                >
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="DEFENDANT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Defendant 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="RESPONDENT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Respondent 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="APPLICANT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Applicant 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                </div>
+              </pdk-checkbox-group>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+      </details>
+      <pdk-form-field
+        label="Date of birth"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <fieldset
+            class="govuk-fieldset"
+            pdk-fieldset=""
+          >
+            <legend
+              class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            >
+               Date of birth 
+            </legend>
+            <pdk-date-input
+              class="ng-untouched ng-pristine ng-valid"
+              name="partyDateOfBirth"
+              pastdate=""
+            >
+              <pdk-interaction-container>
+                <div>
+                  <div
+                    class="pdk-date-input"
+                  >
+                    <div
+                      class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                    >
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-day"
+                          pdk-label=""
+                        >
+                           Day 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                          formcontrolname="day"
+                          id="pdk-date-input-GENERATED_ID-day"
+                          name="dateDay"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-month"
+                          pdk-label=""
+                        >
+                           Month 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                          formcontrolname="month"
+                          id="pdk-date-input-GENERATED_ID-month"
+                          name="dateMonth"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-year"
+                          pdk-label=""
+                        >
+                           Year 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                          formcontrolname="year"
+                          id="pdk-date-input-GENERATED_ID-year"
+                          name="dateYear"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </pdk-interaction-container>
+            </pdk-date-input>
+          </fieldset>
+        </pdk-form-group>
+      </pdk-form-field>
+      <fieldset
+        class="govuk-fieldset"
+        pdk-fieldset=""
+      >
+        <legend
+          class="govuk-fieldset__legend govuk-fieldset__legend--s"
+          pdk-legend="small"
+        >
+          Address
+        </legend>
+        <pdk-form-field
+          class="govuk-!-margin-bottom-4"
+          label="First line of address"
+          pdk-margin-bottom="4"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <label
+              class="govuk-label"
+              for="pdk-form-control-undefined-GENERATED_ID"
+            >
+               First line of address 
+            </label>
+            <input
+              autocomplete="off"
+              class="govuk-input ng-untouched ng-pristine ng-valid"
+              id="pdk-form-control-undefined-GENERATED_ID"
+              name="partyAddress"
+              pdk-text-input=""
+              type="text"
+            />
+          </pdk-form-group>
+        </pdk-form-field>
+        <pdk-form-field
+          label="Postcode"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <label
+              class="govuk-label"
+              for="pdk-form-control-undefined-GENERATED_ID"
+            >
+               Postcode 
+            </label>
+            <input
+              autocomplete="off"
+              class="govuk-input govuk-input--width-5 ng-untouched ng-pristine ng-valid"
+              id="pdk-form-control-undefined-GENERATED_ID"
+              name="partyPostcode"
+              pdk-text-input="postcode"
+              type="text"
+            />
+          </pdk-form-group>
+        </pdk-form-field>
+      </fieldset>
+      <pdk-form-field
+        label="Prosecutor"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Prosecutor 
+          </label>
+          <cpp-prosecutor-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="prosecutor"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <fieldset
+        class="govuk-fieldset"
+        pdk-fieldset=""
+      >
+        <legend
+          class="govuk-fieldset__legend govuk-fieldset__legend--s"
+          pdk-legend="small"
+        >
+          Hearing date
+        </legend>
+        <pdk-form-field
+          class="govuk-!-margin-bottom-3"
+          label="Hearing from date"
+          labeltype="none"
+          pdk-margin-bottom="3"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Hearing from date 
+              </legend>
+              <pdk-date-input
+                class="ng-untouched ng-pristine ng-valid"
+                name="hearingDateFrom"
+              >
+                <pdk-interaction-container>
+                  <div>
+                    <div
+                      class="pdk-date-input"
+                    >
+                      <div
+                        class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                      >
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-day"
+                            pdk-label=""
+                          >
+                             Day 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="day"
+                            id="pdk-date-input-GENERATED_ID-day"
+                            name="dateDay"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-month"
+                            pdk-label=""
+                          >
+                             Month 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="month"
+                            id="pdk-date-input-GENERATED_ID-month"
+                            name="dateMonth"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-year"
+                            pdk-label=""
+                          >
+                             Year 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                            formcontrolname="year"
+                            id="pdk-date-input-GENERATED_ID-year"
+                            name="dateYear"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </pdk-interaction-container>
+              </pdk-date-input>
+              <pdk-inset-text
+                class="govuk-!-margin-bottom-0 govuk-!-margin-top-3"
+                pdk-margin-bottom="0"
+                pdk-margin-top="3"
+              >
+                <div
+                  class="govuk-inset-text"
+                >
+                   Selected day: 
+                  <span>
+                  </span>
+                </div>
+              </pdk-inset-text>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+        <p
+          class="govuk-body-m"
+          pdk-typography="body"
+        >
+          to
+        </p>
+        <pdk-form-field
+          label="Hearing to date"
+          labeltype="none"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Hearing to date 
+              </legend>
+              <pdk-date-input
+                class="ng-untouched ng-pristine ng-valid"
+                name="hearingDateTo"
+              >
+                <pdk-interaction-container>
+                  <div>
+                    <div
+                      class="pdk-date-input"
+                    >
+                      <div
+                        class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                      >
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-day"
+                            pdk-label=""
+                          >
+                             Day 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="day"
+                            id="pdk-date-input-GENERATED_ID-day"
+                            name="dateDay"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-month"
+                            pdk-label=""
+                          >
+                             Month 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="month"
+                            id="pdk-date-input-GENERATED_ID-month"
+                            name="dateMonth"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-year"
+                            pdk-label=""
+                          >
+                             Year 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                            formcontrolname="year"
+                            id="pdk-date-input-GENERATED_ID-year"
+                            name="dateYear"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </pdk-interaction-container>
+              </pdk-date-input>
+              <pdk-inset-text
+                class="govuk-!-margin-bottom-0 govuk-!-margin-top-3"
+                pdk-margin-bottom="0"
+                pdk-margin-top="3"
+              >
+                <div
+                  class="govuk-inset-text"
+                >
+                   Selected day: 
+                  <span>
+                  </span>
+                </div>
+              </pdk-inset-text>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+      </fieldset>
+      <pdk-form-field
+        label="Hearing type"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Hearing type 
+          </label>
+          <cpp-hearing-type-select
+            class="ng-untouched ng-pristine ng-valid"
+            justified=""
+            name="hearingType"
+            placeholder="All hearing types"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-group
+        class="govuk-!-margin-bottom-4 pdk-form-group"
+        pdk-margin-bottom="4"
+      >
+        <fieldset
+          class="govuk-fieldset"
+          pdk-fieldset=""
+        >
+          <legend
+            class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            pdk-legend="small"
+          >
+            Jurisdiction
+          </legend>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="sjp"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="sjp"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Single justice procedure
+              </label>
+            </div>
+          </pdk-checkbox>
+          <div
+            hidden=""
+          >
+            <pdk-checkbox-conditional
+              checkboxtype="small"
+              class="govuk-checkboxes--small"
+            >
+              <div
+                class="govuk-checkboxes__conditional"
+              >
+                <pdk-form-field
+                  label="Sort by date SJP notice served"
+                  labeltype="small"
+                >
+                  <pdk-form-group
+                    class="pdk-form-group"
+                  >
+                    <label
+                      class="govuk-label govuk-label--s"
+                      for="pdk-select-GENERATED_ID"
+                    >
+                       Sort by date SJP notice served 
+                    </label>
+                    <pdk-select
+                      class="ng-untouched ng-pristine ng-valid"
+                      justified=""
+                      name="sortBySjpNoticeServed"
+                      placeholder="Not applicable"
+                    >
+                      <select
+                        class="govuk-select pdk-select--justified"
+                        id="pdk-select-GENERATED_ID"
+                        name="sortBySjpNoticeServed"
+                      >
+                        <option
+                          value=""
+                        >
+                          Not applicable
+                        </option>
+                        <option
+                          value="asc"
+                        >
+                           Ascending 
+                        </option>
+                        <option
+                          value="desc"
+                        >
+                           Descending 
+                        </option>
+                      </select>
+                    </pdk-select>
+                  </pdk-form-group>
+                </pdk-form-field>
+              </div>
+            </pdk-checkbox-conditional>
+          </div>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="magistrateCourt"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="magistrateCourt"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Magistrates'
+              </label>
+            </div>
+          </pdk-checkbox>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="crownCourt"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="crownCourt"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Crown
+              </label>
+            </div>
+          </pdk-checkbox>
+        </fieldset>
+      </pdk-form-group>
+      <pdk-form-field
+        label="Court"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Court 
+          </label>
+          <cpp-organisation-unit-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="organisationUnit"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        label="Application type"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Application type 
+          </label>
+          <cpp-application-type-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="applicationType"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <div
+        data-test-id="form-actions-bottom"
+      >
+        <pdk-form-group
+          class="app-search__form-actions govuk-!-margin-bottom-6 pdk-form-group"
+          pdk-margin-bottom="6"
+        >
+          <button
+            class="govuk-!-margin-0 govuk-button"
+            pdk-button=""
+            pdk-margin="0"
+            type="submit"
+          >
+            Apply filters
+          </button>
+          <a
+            class="govuk-!-margin-left-3 govuk-!-margin-right-3 govuk-link"
+            data-test-id="clear-filters"
+            href="javascript:void(0)"
+            pdk-link=""
+            pdk-margin-horizontal="3"
+          >
+            Clear filters
+          </a>
+        </pdk-form-group>
+      </div>
+    </form>
+  </app-search-form>
+</app-search-form-test>
+`;
+
+exports[`SearchFormComponent should compile correctly when there are initial values 1`] = `
+<app-search-form-test
+  handleErrors={[Function Function]}
+  initialValues={[Function Object]}
+  resetForm={[Function Function]}
+  search={[Function Function]}
+>
+  <app-search-form>
+    <form
+      class="ng-untouched ng-pristine ng-valid"
+      novalidate=""
+      pdk-form=""
+    >
+      <div
+        data-test-id="form-actions-top"
+      >
+        <pdk-form-group
+          class="app-search__form-actions govuk-!-margin-bottom-6 pdk-form-group"
+          pdk-margin-bottom="6"
+        >
+          <button
+            class="govuk-!-margin-0 govuk-button"
+            pdk-button=""
+            pdk-margin="0"
+            type="submit"
+          >
+            Apply filters
+          </button>
+          <a
+            class="govuk-!-margin-left-3 govuk-!-margin-right-3 govuk-link"
+            data-test-id="clear-filters"
+            href="javascript:void(0)"
+            pdk-link=""
+            pdk-margin-horizontal="3"
+          >
+            Clear filters
+          </a>
+        </pdk-form-group>
+      </div>
+      <pdk-form-group
+        class="govuk-!-margin-bottom-4 pdk-form-group"
+        pdk-margin-bottom="4"
+      >
+        <fieldset
+          class="govuk-fieldset"
+          pdk-fieldset=""
+        >
+          <legend
+            class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            pdk-legend="small"
+          >
+            Case status
+          </legend>
+          <pdk-checkbox-group
+            checkboxtype="small"
+            class="ng-untouched ng-pristine ng-valid"
+            name="caseStatus"
+          >
+            <div
+              class="govuk-checkboxes"
+            >
+              <pdk-checkbox
+                class="govuk-checkboxes govuk-checkboxes--small"
+              >
+                <div
+                  class="govuk-checkboxes__item"
+                >
+                  <input
+                    class="govuk-checkboxes__input"
+                    id="pdk-checkbox-GENERATED_ID"
+                    name="pdk-checkbox-group-GENERATED_ID"
+                    type="checkbox"
+                    value="ACTIVE"
+                  />
+                  <label
+                    class="govuk-label govuk-checkboxes__label"
+                    for="pdk-checkbox-GENERATED_ID"
+                  >
+                     Active 
+                  </label>
+                </div>
+              </pdk-checkbox>
+              <pdk-checkbox
+                class="govuk-checkboxes govuk-checkboxes--small"
+              >
+                <div
+                  class="govuk-checkboxes__item"
+                >
+                  <input
+                    class="govuk-checkboxes__input"
+                    id="pdk-checkbox-GENERATED_ID"
+                    name="pdk-checkbox-group-GENERATED_ID"
+                    type="checkbox"
+                    value="INACTIVE"
+                  />
+                  <label
+                    class="govuk-label govuk-checkboxes__label"
+                    for="pdk-checkbox-GENERATED_ID"
+                  >
+                     Inactive 
+                  </label>
+                </div>
+              </pdk-checkbox>
+            </div>
+          </pdk-checkbox-group>
+        </fieldset>
+      </pdk-form-group>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-4"
+        label="Reference"
+        labeltype="small"
+        pdk-margin-bottom="4"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Reference 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="caseReference"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-3"
+        label="First name"
+        labeltype="small"
+        pdk-margin-bottom="3"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             First name 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="partyFirstAndOrMiddleName"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-3"
+        label="Last name or organisation"
+        labeltype="small"
+        pdk-margin-bottom="3"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Last name or organisation 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="partyLastNameOrOrganisationName"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <details
+        class="govuk-details"
+        open=""
+        pdk-details=""
+      >
+        <summary
+          class="govuk-details__summary"
+        >
+          <span
+            class="govuk-details__summary-text"
+          >
+            Select type
+          </span>
+        </summary>
+        <pdk-form-field
+          label="Type"
+          labeltype="none"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Type 
+              </legend>
+              <pdk-checkbox-group
+                checkboxtype="small"
+                class="ng-untouched ng-pristine ng-valid"
+                name="partyTypes"
+              >
+                <div
+                  class="govuk-checkboxes"
+                >
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="DEFENDANT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Defendant 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="RESPONDENT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Respondent 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="APPLICANT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Applicant 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                </div>
+              </pdk-checkbox-group>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+      </details>
+      <pdk-form-field
+        label="Date of birth"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <fieldset
+            class="govuk-fieldset"
+            pdk-fieldset=""
+          >
+            <legend
+              class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            >
+               Date of birth 
+            </legend>
+            <pdk-date-input
+              class="ng-untouched ng-pristine ng-valid"
+              name="partyDateOfBirth"
+              pastdate=""
+            >
+              <pdk-interaction-container>
+                <div>
+                  <div
+                    class="pdk-date-input"
+                  >
+                    <div
+                      class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                    >
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-day"
+                          pdk-label=""
+                        >
+                           Day 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                          formcontrolname="day"
+                          id="pdk-date-input-GENERATED_ID-day"
+                          name="dateDay"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-month"
+                          pdk-label=""
+                        >
+                           Month 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                          formcontrolname="month"
+                          id="pdk-date-input-GENERATED_ID-month"
+                          name="dateMonth"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-year"
+                          pdk-label=""
+                        >
+                           Year 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                          formcontrolname="year"
+                          id="pdk-date-input-GENERATED_ID-year"
+                          name="dateYear"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </pdk-interaction-container>
+            </pdk-date-input>
+          </fieldset>
+        </pdk-form-group>
+      </pdk-form-field>
+      <fieldset
+        class="govuk-fieldset"
+        pdk-fieldset=""
+      >
+        <legend
+          class="govuk-fieldset__legend govuk-fieldset__legend--s"
+          pdk-legend="small"
+        >
+          Address
+        </legend>
+        <pdk-form-field
+          class="govuk-!-margin-bottom-4"
+          label="First line of address"
+          pdk-margin-bottom="4"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <label
+              class="govuk-label"
+              for="pdk-form-control-undefined-GENERATED_ID"
+            >
+               First line of address 
+            </label>
+            <input
+              autocomplete="off"
+              class="govuk-input ng-untouched ng-pristine ng-valid"
+              id="pdk-form-control-undefined-GENERATED_ID"
+              name="partyAddress"
+              pdk-text-input=""
+              type="text"
+            />
+          </pdk-form-group>
+        </pdk-form-field>
+        <pdk-form-field
+          label="Postcode"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <label
+              class="govuk-label"
+              for="pdk-form-control-undefined-GENERATED_ID"
+            >
+               Postcode 
+            </label>
+            <input
+              autocomplete="off"
+              class="govuk-input govuk-input--width-5 ng-untouched ng-pristine ng-valid"
+              id="pdk-form-control-undefined-GENERATED_ID"
+              name="partyPostcode"
+              pdk-text-input="postcode"
+              type="text"
+            />
+          </pdk-form-group>
+        </pdk-form-field>
+      </fieldset>
+      <pdk-form-field
+        label="Prosecutor"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Prosecutor 
+          </label>
+          <cpp-prosecutor-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="prosecutor"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <fieldset
+        class="govuk-fieldset"
+        pdk-fieldset=""
+      >
+        <legend
+          class="govuk-fieldset__legend govuk-fieldset__legend--s"
+          pdk-legend="small"
+        >
+          Hearing date
+        </legend>
+        <pdk-form-field
+          class="govuk-!-margin-bottom-3"
+          label="Hearing from date"
+          labeltype="none"
+          pdk-margin-bottom="3"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Hearing from date 
+              </legend>
+              <pdk-date-input
+                class="ng-untouched ng-pristine ng-valid"
+                name="hearingDateFrom"
+              >
+                <pdk-interaction-container>
+                  <div>
+                    <div
+                      class="pdk-date-input"
+                    >
+                      <div
+                        class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                      >
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-day"
+                            pdk-label=""
+                          >
+                             Day 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="day"
+                            id="pdk-date-input-GENERATED_ID-day"
+                            name="dateDay"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-month"
+                            pdk-label=""
+                          >
+                             Month 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="month"
+                            id="pdk-date-input-GENERATED_ID-month"
+                            name="dateMonth"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-year"
+                            pdk-label=""
+                          >
+                             Year 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                            formcontrolname="year"
+                            id="pdk-date-input-GENERATED_ID-year"
+                            name="dateYear"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </pdk-interaction-container>
+              </pdk-date-input>
+              <pdk-inset-text
+                class="govuk-!-margin-bottom-0 govuk-!-margin-top-3"
+                pdk-margin-bottom="0"
+                pdk-margin-top="3"
+              >
+                <div
+                  class="govuk-inset-text"
+                >
+                   Selected day: 
+                  <span>
+                  </span>
+                </div>
+              </pdk-inset-text>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+        <p
+          class="govuk-body-m"
+          pdk-typography="body"
+        >
+          to
+        </p>
+        <pdk-form-field
+          label="Hearing to date"
+          labeltype="none"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Hearing to date 
+              </legend>
+              <pdk-date-input
+                class="ng-untouched ng-pristine ng-valid"
+                name="hearingDateTo"
+              >
+                <pdk-interaction-container>
+                  <div>
+                    <div
+                      class="pdk-date-input"
+                    >
+                      <div
+                        class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                      >
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-day"
+                            pdk-label=""
+                          >
+                             Day 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="day"
+                            id="pdk-date-input-GENERATED_ID-day"
+                            name="dateDay"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-month"
+                            pdk-label=""
+                          >
+                             Month 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="month"
+                            id="pdk-date-input-GENERATED_ID-month"
+                            name="dateMonth"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-year"
+                            pdk-label=""
+                          >
+                             Year 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                            formcontrolname="year"
+                            id="pdk-date-input-GENERATED_ID-year"
+                            name="dateYear"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </pdk-interaction-container>
+              </pdk-date-input>
+              <pdk-inset-text
+                class="govuk-!-margin-bottom-0 govuk-!-margin-top-3"
+                pdk-margin-bottom="0"
+                pdk-margin-top="3"
+              >
+                <div
+                  class="govuk-inset-text"
+                >
+                   Selected day: 
+                  <span>
+                  </span>
+                </div>
+              </pdk-inset-text>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+      </fieldset>
+      <pdk-form-field
+        label="Hearing type"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Hearing type 
+          </label>
+          <cpp-hearing-type-select
+            class="ng-untouched ng-pristine ng-valid"
+            justified=""
+            name="hearingType"
+            placeholder="All hearing types"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-group
+        class="govuk-!-margin-bottom-4 pdk-form-group"
+        pdk-margin-bottom="4"
+      >
+        <fieldset
+          class="govuk-fieldset"
+          pdk-fieldset=""
+        >
+          <legend
+            class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            pdk-legend="small"
+          >
+            Jurisdiction
+          </legend>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="sjp"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="sjp"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Single justice procedure
+              </label>
+            </div>
+          </pdk-checkbox>
+          <div
+            hidden=""
+          >
+            <pdk-checkbox-conditional
+              checkboxtype="small"
+              class="govuk-checkboxes--small"
+            >
+              <div
+                class="govuk-checkboxes__conditional"
+              >
+                <pdk-form-field
+                  label="Sort by date SJP notice served"
+                  labeltype="small"
+                >
+                  <pdk-form-group
+                    class="pdk-form-group"
+                  >
+                    <label
+                      class="govuk-label govuk-label--s"
+                      for="pdk-select-GENERATED_ID"
+                    >
+                       Sort by date SJP notice served 
+                    </label>
+                    <pdk-select
+                      class="ng-untouched ng-pristine ng-valid"
+                      justified=""
+                      name="sortBySjpNoticeServed"
+                      placeholder="Not applicable"
+                    >
+                      <select
+                        class="govuk-select pdk-select--justified"
+                        id="pdk-select-GENERATED_ID"
+                        name="sortBySjpNoticeServed"
+                      >
+                        <option
+                          value=""
+                        >
+                          Not applicable
+                        </option>
+                        <option
+                          value="asc"
+                        >
+                           Ascending 
+                        </option>
+                        <option
+                          value="desc"
+                        >
+                           Descending 
+                        </option>
+                      </select>
+                    </pdk-select>
+                  </pdk-form-group>
+                </pdk-form-field>
+              </div>
+            </pdk-checkbox-conditional>
+          </div>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="magistrateCourt"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="magistrateCourt"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Magistrates'
+              </label>
+            </div>
+          </pdk-checkbox>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="crownCourt"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="crownCourt"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Crown
+              </label>
+            </div>
+          </pdk-checkbox>
+        </fieldset>
+      </pdk-form-group>
+      <pdk-form-field
+        label="Court"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Court 
+          </label>
+          <cpp-organisation-unit-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="organisationUnit"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        label="Application type"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Application type 
+          </label>
+          <cpp-application-type-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="applicationType"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <fieldset
+        class="govuk-fieldset"
+        pdk-fieldset=""
+      >
+        <legend
+          class="govuk-!-margin-bottom-0 govuk-fieldset__legend govuk-fieldset__legend--s"
+          pdk-legend="small"
+          pdk-margin-bottom="0"
+        >
+          Box work
+        </legend>
+        <pdk-form-field>
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <pdk-checkbox
+              checkboxtype="small"
+              class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+              name="boxWorkHearing"
+            >
+              <div
+                class="govuk-checkboxes__item"
+              >
+                <input
+                  class="govuk-checkboxes__input"
+                  id="pdk-checkbox-GENERATED_ID"
+                  name="boxWorkHearing"
+                  type="checkbox"
+                  value="true"
+                />
+                <label
+                  class="govuk-label govuk-checkboxes__label"
+                  for="pdk-checkbox-GENERATED_ID"
+                >
+                   Show boxwork only 
+                </label>
+              </div>
+            </pdk-checkbox>
+          </pdk-form-group>
+        </pdk-form-field>
+      </fieldset>
+      <div
+        data-test-id="form-actions-bottom"
+      >
+        <pdk-form-group
+          class="app-search__form-actions govuk-!-margin-bottom-6 pdk-form-group"
+          pdk-margin-bottom="6"
+        >
+          <button
+            class="govuk-!-margin-0 govuk-button"
+            pdk-button=""
+            pdk-margin="0"
+            type="submit"
+          >
+            Apply filters
+          </button>
+          <a
+            class="govuk-!-margin-left-3 govuk-!-margin-right-3 govuk-link"
+            data-test-id="clear-filters"
+            href="javascript:void(0)"
+            pdk-link=""
+            pdk-margin-horizontal="3"
+          >
+            Clear filters
+          </a>
+        </pdk-form-group>
+      </div>
+    </form>
+  </app-search-form>
+</app-search-form-test>
+`;
+
+exports[`SearchFormComponent should display the checkbox for timed appointments when boxWorkHearing is true 1`] = `
+<app-search-form-test
+  handleErrors={[Function Function]}
+  initialValues={[Function Object]}
+  resetForm={[Function Function]}
+  search={[Function Function]}
+>
+  <app-search-form>
+    <form
+      class="ng-untouched ng-pristine ng-valid"
+      novalidate=""
+      pdk-form=""
+    >
+      <div
+        data-test-id="form-actions-top"
+      >
+        <pdk-form-group
+          class="app-search__form-actions govuk-!-margin-bottom-6 pdk-form-group"
+          pdk-margin-bottom="6"
+        >
+          <button
+            class="govuk-!-margin-0 govuk-button"
+            pdk-button=""
+            pdk-margin="0"
+            type="submit"
+          >
+            Apply filters
+          </button>
+          <a
+            class="govuk-!-margin-left-3 govuk-!-margin-right-3 govuk-link"
+            data-test-id="clear-filters"
+            href="javascript:void(0)"
+            pdk-link=""
+            pdk-margin-horizontal="3"
+          >
+            Clear filters
+          </a>
+        </pdk-form-group>
+      </div>
+      <pdk-form-group
+        class="govuk-!-margin-bottom-4 pdk-form-group"
+        pdk-margin-bottom="4"
+      >
+        <fieldset
+          class="govuk-fieldset"
+          pdk-fieldset=""
+        >
+          <legend
+            class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            pdk-legend="small"
+          >
+            Case status
+          </legend>
+          <pdk-checkbox-group
+            checkboxtype="small"
+            class="ng-untouched ng-pristine ng-valid"
+            name="caseStatus"
+          >
+            <div
+              class="govuk-checkboxes"
+            >
+              <pdk-checkbox
+                class="govuk-checkboxes govuk-checkboxes--small"
+              >
+                <div
+                  class="govuk-checkboxes__item"
+                >
+                  <input
+                    class="govuk-checkboxes__input"
+                    id="pdk-checkbox-GENERATED_ID"
+                    name="pdk-checkbox-group-GENERATED_ID"
+                    type="checkbox"
+                    value="ACTIVE"
+                  />
+                  <label
+                    class="govuk-label govuk-checkboxes__label"
+                    for="pdk-checkbox-GENERATED_ID"
+                  >
+                     Active 
+                  </label>
+                </div>
+              </pdk-checkbox>
+              <pdk-checkbox
+                class="govuk-checkboxes govuk-checkboxes--small"
+              >
+                <div
+                  class="govuk-checkboxes__item"
+                >
+                  <input
+                    class="govuk-checkboxes__input"
+                    id="pdk-checkbox-GENERATED_ID"
+                    name="pdk-checkbox-group-GENERATED_ID"
+                    type="checkbox"
+                    value="INACTIVE"
+                  />
+                  <label
+                    class="govuk-label govuk-checkboxes__label"
+                    for="pdk-checkbox-GENERATED_ID"
+                  >
+                     Inactive 
+                  </label>
+                </div>
+              </pdk-checkbox>
+            </div>
+          </pdk-checkbox-group>
+        </fieldset>
+      </pdk-form-group>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-4"
+        label="Reference"
+        labeltype="small"
+        pdk-margin-bottom="4"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Reference 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="caseReference"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-3"
+        label="First name"
+        labeltype="small"
+        pdk-margin-bottom="3"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             First name 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="partyFirstAndOrMiddleName"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        class="govuk-!-margin-bottom-3"
+        label="Last name or organisation"
+        labeltype="small"
+        pdk-margin-bottom="3"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Last name or organisation 
+          </label>
+          <input
+            autocomplete="off"
+            class="govuk-input ng-untouched ng-pristine ng-valid"
+            id="pdk-form-control-undefined-GENERATED_ID"
+            name="partyLastNameOrOrganisationName"
+            pdk-text-input=""
+            type="text"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <details
+        class="govuk-details"
+        pdk-details=""
+      >
+        <summary
+          class="govuk-details__summary"
+        >
+          <span
+            class="govuk-details__summary-text"
+          >
+            Select type
+          </span>
+        </summary>
+        <pdk-form-field
+          label="Type"
+          labeltype="none"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Type 
+              </legend>
+              <pdk-checkbox-group
+                checkboxtype="small"
+                class="ng-untouched ng-pristine ng-valid"
+                name="partyTypes"
+              >
+                <div
+                  class="govuk-checkboxes"
+                >
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="DEFENDANT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Defendant 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="RESPONDENT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Respondent 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                  <pdk-checkbox
+                    class="govuk-checkboxes govuk-checkboxes--small"
+                  >
+                    <div
+                      class="govuk-checkboxes__item"
+                    >
+                      <input
+                        class="govuk-checkboxes__input"
+                        id="pdk-checkbox-GENERATED_ID"
+                        name="pdk-checkbox-group-GENERATED_ID"
+                        type="checkbox"
+                        value="APPLICANT"
+                      />
+                      <label
+                        class="govuk-label govuk-checkboxes__label"
+                        for="pdk-checkbox-GENERATED_ID"
+                      >
+                         Applicant 
+                      </label>
+                    </div>
+                  </pdk-checkbox>
+                </div>
+              </pdk-checkbox-group>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+      </details>
+      <pdk-form-field
+        label="Date of birth"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <fieldset
+            class="govuk-fieldset"
+            pdk-fieldset=""
+          >
+            <legend
+              class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            >
+               Date of birth 
+            </legend>
+            <pdk-date-input
+              class="ng-untouched ng-pristine ng-valid"
+              name="partyDateOfBirth"
+              pastdate=""
+            >
+              <pdk-interaction-container>
+                <div>
+                  <div
+                    class="pdk-date-input"
+                  >
+                    <div
+                      class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                    >
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-day"
+                          pdk-label=""
+                        >
+                           Day 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                          formcontrolname="day"
+                          id="pdk-date-input-GENERATED_ID-day"
+                          name="dateDay"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-month"
+                          pdk-label=""
+                        >
+                           Month 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                          formcontrolname="month"
+                          id="pdk-date-input-GENERATED_ID-month"
+                          name="dateMonth"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                      <div
+                        class="govuk-date-input__item"
+                      >
+                        <label
+                          class="govuk-date-input__label govuk-label"
+                          for="pdk-date-input-GENERATED_ID-year"
+                          pdk-label=""
+                        >
+                           Year 
+                        </label>
+                        <input
+                          autocomplete="off"
+                          class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                          formcontrolname="year"
+                          id="pdk-date-input-GENERATED_ID-year"
+                          name="dateYear"
+                          required=""
+                          type="number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </pdk-interaction-container>
+            </pdk-date-input>
+          </fieldset>
+        </pdk-form-group>
+      </pdk-form-field>
+      <fieldset
+        class="govuk-fieldset"
+        pdk-fieldset=""
+      >
+        <legend
+          class="govuk-fieldset__legend govuk-fieldset__legend--s"
+          pdk-legend="small"
+        >
+          Address
+        </legend>
+        <pdk-form-field
+          class="govuk-!-margin-bottom-4"
+          label="First line of address"
+          pdk-margin-bottom="4"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <label
+              class="govuk-label"
+              for="pdk-form-control-undefined-GENERATED_ID"
+            >
+               First line of address 
+            </label>
+            <input
+              autocomplete="off"
+              class="govuk-input ng-untouched ng-pristine ng-valid"
+              id="pdk-form-control-undefined-GENERATED_ID"
+              name="partyAddress"
+              pdk-text-input=""
+              type="text"
+            />
+          </pdk-form-group>
+        </pdk-form-field>
+        <pdk-form-field
+          label="Postcode"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <label
+              class="govuk-label"
+              for="pdk-form-control-undefined-GENERATED_ID"
+            >
+               Postcode 
+            </label>
+            <input
+              autocomplete="off"
+              class="govuk-input govuk-input--width-5 ng-untouched ng-pristine ng-valid"
+              id="pdk-form-control-undefined-GENERATED_ID"
+              name="partyPostcode"
+              pdk-text-input="postcode"
+              type="text"
+            />
+          </pdk-form-group>
+        </pdk-form-field>
+      </fieldset>
+      <pdk-form-field
+        label="Prosecutor"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Prosecutor 
+          </label>
+          <cpp-prosecutor-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="prosecutor"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <fieldset
+        class="govuk-fieldset"
+        pdk-fieldset=""
+      >
+        <legend
+          class="govuk-fieldset__legend govuk-fieldset__legend--s"
+          pdk-legend="small"
+        >
+          Hearing date
+        </legend>
+        <pdk-form-field
+          class="govuk-!-margin-bottom-3"
+          label="Hearing from date"
+          labeltype="none"
+          pdk-margin-bottom="3"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Hearing from date 
+              </legend>
+              <pdk-date-input
+                class="ng-untouched ng-pristine ng-valid"
+                name="hearingDateFrom"
+              >
+                <pdk-interaction-container>
+                  <div>
+                    <div
+                      class="pdk-date-input"
+                    >
+                      <div
+                        class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                      >
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-day"
+                            pdk-label=""
+                          >
+                             Day 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="day"
+                            id="pdk-date-input-GENERATED_ID-day"
+                            name="dateDay"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-month"
+                            pdk-label=""
+                          >
+                             Month 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="month"
+                            id="pdk-date-input-GENERATED_ID-month"
+                            name="dateMonth"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-year"
+                            pdk-label=""
+                          >
+                             Year 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                            formcontrolname="year"
+                            id="pdk-date-input-GENERATED_ID-year"
+                            name="dateYear"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </pdk-interaction-container>
+              </pdk-date-input>
+              <pdk-inset-text
+                class="govuk-!-margin-bottom-0 govuk-!-margin-top-3"
+                pdk-margin-bottom="0"
+                pdk-margin-top="3"
+              >
+                <div
+                  class="govuk-inset-text"
+                >
+                   Selected day: 
+                  <span>
+                  </span>
+                </div>
+              </pdk-inset-text>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+        <p
+          class="govuk-body-m"
+          pdk-typography="body"
+        >
+          to
+        </p>
+        <pdk-form-field
+          label="Hearing to date"
+          labeltype="none"
+        >
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <fieldset
+              class="govuk-fieldset"
+              pdk-fieldset=""
+            >
+              <legend
+                class="govuk-fieldset__legend govuk-visually-hidden"
+              >
+                 Hearing to date 
+              </legend>
+              <pdk-date-input
+                class="ng-untouched ng-pristine ng-valid"
+                name="hearingDateTo"
+              >
+                <pdk-interaction-container>
+                  <div>
+                    <div
+                      class="pdk-date-input"
+                    >
+                      <div
+                        class="govuk-date-input ng-untouched ng-pristine ng-invalid"
+                      >
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-day"
+                            pdk-label=""
+                          >
+                             Day 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="day"
+                            id="pdk-date-input-GENERATED_ID-day"
+                            name="dateDay"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-month"
+                            pdk-label=""
+                          >
+                             Month 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-2"
+                            formcontrolname="month"
+                            id="pdk-date-input-GENERATED_ID-month"
+                            name="dateMonth"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                        <div
+                          class="govuk-date-input__item"
+                        >
+                          <label
+                            class="govuk-date-input__label govuk-label"
+                            for="pdk-date-input-GENERATED_ID-year"
+                            pdk-label=""
+                          >
+                             Year 
+                          </label>
+                          <input
+                            autocomplete="off"
+                            class="govuk-date-input__input ng-untouched ng-pristine ng-invalid govuk-input govuk-input--width-4"
+                            formcontrolname="year"
+                            id="pdk-date-input-GENERATED_ID-year"
+                            name="dateYear"
+                            required=""
+                            type="number"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </pdk-interaction-container>
+              </pdk-date-input>
+              <pdk-inset-text
+                class="govuk-!-margin-bottom-0 govuk-!-margin-top-3"
+                pdk-margin-bottom="0"
+                pdk-margin-top="3"
+              >
+                <div
+                  class="govuk-inset-text"
+                >
+                   Selected day: 
+                  <span>
+                  </span>
+                </div>
+              </pdk-inset-text>
+            </fieldset>
+          </pdk-form-group>
+        </pdk-form-field>
+      </fieldset>
+      <pdk-form-field
+        label="Hearing type"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Hearing type 
+          </label>
+          <cpp-hearing-type-select
+            class="ng-untouched ng-pristine ng-valid"
+            justified=""
+            name="hearingType"
+            placeholder="All hearing types"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-group
+        class="govuk-!-margin-bottom-4 pdk-form-group"
+        pdk-margin-bottom="4"
+      >
+        <fieldset
+          class="govuk-fieldset"
+          pdk-fieldset=""
+        >
+          <legend
+            class="govuk-fieldset__legend govuk-fieldset__legend--s"
+            pdk-legend="small"
+          >
+            Jurisdiction
+          </legend>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="sjp"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="sjp"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Single justice procedure
+              </label>
+            </div>
+          </pdk-checkbox>
+          <div
+            hidden=""
+          >
+            <pdk-checkbox-conditional
+              checkboxtype="small"
+              class="govuk-checkboxes--small"
+            >
+              <div
+                class="govuk-checkboxes__conditional"
+              >
+                <pdk-form-field
+                  label="Sort by date SJP notice served"
+                  labeltype="small"
+                >
+                  <pdk-form-group
+                    class="pdk-form-group"
+                  >
+                    <label
+                      class="govuk-label govuk-label--s"
+                      for="pdk-select-GENERATED_ID"
+                    >
+                       Sort by date SJP notice served 
+                    </label>
+                    <pdk-select
+                      class="ng-untouched ng-pristine ng-valid"
+                      justified=""
+                      name="sortBySjpNoticeServed"
+                      placeholder="Not applicable"
+                    >
+                      <select
+                        class="govuk-select pdk-select--justified"
+                        id="pdk-select-GENERATED_ID"
+                        name="sortBySjpNoticeServed"
+                      >
+                        <option
+                          value=""
+                        >
+                          Not applicable
+                        </option>
+                        <option
+                          value="asc"
+                        >
+                           Ascending 
+                        </option>
+                        <option
+                          value="desc"
+                        >
+                           Descending 
+                        </option>
+                      </select>
+                    </pdk-select>
+                  </pdk-form-group>
+                </pdk-form-field>
+              </div>
+            </pdk-checkbox-conditional>
+          </div>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="magistrateCourt"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="magistrateCourt"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Magistrates'
+              </label>
+            </div>
+          </pdk-checkbox>
+          <pdk-checkbox
+            checkboxtype="small"
+            class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+            name="crownCourt"
+          >
+            <div
+              class="govuk-checkboxes__item"
+            >
+              <input
+                class="govuk-checkboxes__input"
+                id="pdk-checkbox-GENERATED_ID"
+                name="crownCourt"
+                type="checkbox"
+                value="true"
+              />
+              <label
+                class="govuk-label govuk-checkboxes__label"
+                for="pdk-checkbox-GENERATED_ID"
+              >
+                Crown
+              </label>
+            </div>
+          </pdk-checkbox>
+        </fieldset>
+      </pdk-form-group>
+      <pdk-form-field
+        label="Court"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Court 
+          </label>
+          <cpp-organisation-unit-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="organisationUnit"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <pdk-form-field
+        label="Application type"
+        labeltype="small"
+      >
+        <pdk-form-group
+          class="pdk-form-group"
+        >
+          <label
+            class="govuk-label govuk-label--s"
+            for="pdk-form-control-undefined-GENERATED_ID"
+          >
+             Application type 
+          </label>
+          <cpp-application-type-autosuggest
+            class="ng-untouched ng-pristine ng-valid"
+            name="applicationType"
+          />
+        </pdk-form-group>
+      </pdk-form-field>
+      <fieldset
+        class="govuk-fieldset"
+        pdk-fieldset=""
+      >
+        <legend
+          class="govuk-!-margin-bottom-0 govuk-fieldset__legend govuk-fieldset__legend--s"
+          pdk-legend="small"
+          pdk-margin-bottom="0"
+        >
+          Box work
+        </legend>
+        <pdk-form-field>
+          <pdk-form-group
+            class="pdk-form-group"
+          >
+            <pdk-checkbox
+              checkboxtype="small"
+              class="govuk-checkboxes govuk-checkboxes--small ng-untouched ng-pristine ng-valid"
+              name="boxWorkHearing"
+            >
+              <div
+                class="govuk-checkboxes__item"
+              >
+                <input
+                  class="govuk-checkboxes__input"
+                  id="pdk-checkbox-GENERATED_ID"
+                  name="boxWorkHearing"
+                  type="checkbox"
+                  value="true"
+                />
+                <label
+                  class="govuk-label govuk-checkboxes__label"
+                  for="pdk-checkbox-GENERATED_ID"
+                >
+                   Show boxwork only 
+                </label>
+              </div>
+            </pdk-checkbox>
+          </pdk-form-group>
+        </pdk-form-field>
+      </fieldset>
+      <div
+        data-test-id="form-actions-bottom"
+      >
+        <pdk-form-group
+          class="app-search__form-actions govuk-!-margin-bottom-6 pdk-form-group"
+          pdk-margin-bottom="6"
+        >
+          <button
+            class="govuk-!-margin-0 govuk-button"
+            pdk-button=""
+            pdk-margin="0"
+            type="submit"
+          >
+            Apply filters
+          </button>
+          <a
+            class="govuk-!-margin-left-3 govuk-!-margin-right-3 govuk-link"
+            data-test-id="clear-filters"
+            href="javascript:void(0)"
+            pdk-link=""
+            pdk-margin-horizontal="3"
+          >
+            Clear filters
+          </a>
+        </pdk-form-group>
+      </div>
+    </form>
+  </app-search-form>
+</app-search-form-test>
+`;

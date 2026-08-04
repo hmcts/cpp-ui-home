@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppContainerComponent should compile correctly 1`] = `
+<app-root
+  accessibilityUrl$={[Function _Store]}
+  activity$={[Function Observable]}
+  canSearch$={[Function _Store]}
+  headerNavItems$={[Function Observable]}
+  router={[Function _Router]}
+>
+  <app-layout>
+     activity: false 
+    <br />
+     headerNavItems: [
+    {
+      "title": "Home",
+      "href": "http://app.url"
+    },
+    {
+      "title": "Your account",
+      "href": "/profile"
+    },
+    {
+      "title": "Your services",
+      "href": "/services"
+    },
+    {
+      "title": "Sign out",
+      "href": "/logout"
+    }
+  ] 
+    <br />
+     searchEnabled: No 
+  </app-layout>
+</app-root>
+`;
+
+exports[`AppContainerComponent should enable the search when the user has sufficient permissions 1`] = `
+<app-root
+  accessibilityUrl$={[Function _Store]}
+  activity$={[Function Observable]}
+  canSearch$={[Function _Store]}
+  headerNavItems$={[Function Observable]}
+  router={[Function _Router]}
+>
+  <app-layout>
+     activity: false 
+    <br />
+     headerNavItems: [
+    {
+      "title": "Detailed search",
+      "href": "javascript:void(0)"
+    },
+    {
+      "title": "Home",
+      "href": "http://app.url"
+    },
+    {
+      "title": "Your account",
+      "href": "/profile"
+    },
+    {
+      "title": "Your services",
+      "href": "/services"
+    },
+    {
+      "title": "Sign out",
+      "href": "/logout"
+    }
+  ] 
+    <br />
+     searchEnabled: Yes 
+  </app-layout>
+</app-root>
+`;
+
+exports[`AppContainerComponent should show the activity indicator when perform an api request 1`] = `
+<app-root
+  accessibilityUrl$={[Function _Store]}
+  activity$={[Function Observable]}
+  canSearch$={[Function _Store]}
+  headerNavItems$={[Function Observable]}
+  router={[Function _Router]}
+>
+  <app-layout>
+     activity: true 
+    <br />
+     headerNavItems: [
+    {
+      "title": "Home",
+      "href": "http://app.url"
+    },
+    {
+      "title": "Your account",
+      "href": "/profile"
+    },
+    {
+      "title": "Your services",
+      "href": "/services"
+    },
+    {
+      "title": "Sign out",
+      "href": "/logout"
+    }
+  ] 
+    <br />
+     searchEnabled: No 
+  </app-layout>
+</app-root>
+`;

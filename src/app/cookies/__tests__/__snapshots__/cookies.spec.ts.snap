@@ -1,0 +1,506 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cookies should compile correctly 1`] = `
+<app-cookies
+  activatedRoute={[Function Object]}
+  cookiesService={[Function Object]}
+  formValues={[Function Object]}
+  router={[Function Object]}
+>
+  <h1
+    class="govuk-heading-xl"
+    pdk-typography="heading-xlarge"
+  >
+    Cookies on Common Platform
+  </h1><pdk-grid
+    class="govuk-grid-row"
+    container=""
+  >
+    <pdk-grid
+      class="govuk-grid-column-two-thirds"
+      two-thirds=""
+    >
+      <p
+        class="govuk-body-m"
+        pdk-typography="body"
+      >
+         Cookies are files saved on your phone, tablet or computer when you visit a website. 
+      </p>
+      <p
+        class="govuk-body-m"
+        pdk-typography="body"
+      >
+         We use cookies to make the Common Platform work and collect information about how you use the service. 
+      </p>
+      <h2
+        class="govuk-heading-m"
+        pdk-typography="heading-medium"
+      >
+        Essential cookies
+      </h2>
+      <p
+        class="govuk-body-m"
+        pdk-typography="body"
+      >
+         Essential cookies record your session on the Common Platform, improve performance and remember language preferences. We do not need to ask permission to use them. 
+      </p>
+      <table
+        class="govuk-table"
+        pdk-table=""
+      >
+        <thead
+          class="govuk-table__head"
+          pdk-table-head=""
+        >
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <th
+              class="govuk-table__cell"
+              pdk-table-header=""
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              class="govuk-table__cell"
+              pdk-table-header=""
+              scope="col"
+            >
+              Purpose
+            </th>
+            <th
+              class="govuk-table__cell"
+              pdk-table-header=""
+              scope="col"
+            >
+              Expires
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="govuk-table__body"
+          pdk-table-body=""
+        >
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+               amtIdamCookie, pidpIdamCookie, pidpSessionIdamCookie, idamidpcontam, idamidptok 
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Details of your current session
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              30 minutes
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              LOGIN_LB_ID, FRONTEND_LB_ID, TOKEN_LB_ID
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              To improve performance
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              When your browser closes
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              pidplbIdamCookie, idamidplb
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              To improve performance
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              30 minutes
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              COOKIE_LOCALE_LANG, i18next
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Localisation
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              30 minutes
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              COOKIE_LOCALE
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              LocRemember language preferences (e.g. Welsh)alisation
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              When your browser closes
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2
+        class="govuk-heading-m"
+        pdk-typography="heading-medium"
+      >
+        To measure application performance
+      </h2>
+      <p
+        class="govuk-body-m"
+        pdk-typography="body"
+      >
+         We use Dynatrace Software Intelligence Platform to provide an Application Performance Monitoring Service to collect information about how you use HMCTS services. We do this to monitor HMCTS services in order to resolve issues within our services as well as collect data on how our services can be improved. HMCTS store information about: 
+      </p>
+      <ul
+        class="govuk-list govuk-list--bullet"
+        pdk-list="bullet"
+      >
+        <li>
+          Site performance
+        </li>
+        <li>
+          Website usage
+        </li>
+        <li>
+          User behaviour
+        </li>
+      </ul>
+      <p
+        class="govuk-body-m"
+        pdk-typography="body"
+      >
+         Information is presented within the Application Performance Monitoring service for the purposes detailed above. We do not use or share the information for any other purpose. We do not allow Dynatrace to use or share the information for any other purposes. 
+      </p>
+      <table
+        class="cookies-table govuk-table"
+        pdk-table=""
+      >
+        <thead
+          class="govuk-table__head"
+          pdk-table-head=""
+        >
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <th
+              class="govuk-table__cell"
+              pdk-table-header=""
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              class="govuk-table__cell"
+              pdk-table-header=""
+              scope="col"
+            >
+              Purpose
+            </th>
+            <th
+              class="govuk-table__cell"
+              pdk-table-header=""
+              scope="col"
+            >
+              Expires
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="govuk-table__body"
+          pdk-table-body=""
+        >
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              dtCookie
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Tracks a visit across multiple request
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Session end
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              dtLatC
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Measures server latency for performance monitoring
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Session end
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              dtPC
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+               Required to identify proper endpoints for beacon transmission; includes session ID for correlation 
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Session end
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              dtSa
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Intermediate store for page-spanning actions
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Session end
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              rxVisitor
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Visitor ID to correlate sessions
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              1 year
+            </td>
+          </tr>
+          <tr
+            class="govuk-table__row"
+            pdk-table-row=""
+          >
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              rxvt
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Session timeout
+            </td>
+            <td
+              class="govuk-table__cell"
+              pdk-table-cell=""
+            >
+              Session end
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <app-cookies-preferences-form>
+        <form
+          class="ng-untouched ng-pristine ng-valid"
+          novalidate=""
+          pdk-form=""
+        >
+          <pdk-form-field
+            label="Allow cookies that measure website application performance monitoring?"
+            labeltype="small"
+          >
+            <pdk-form-group
+              class="pdk-form-group"
+            >
+              <fieldset
+                class="govuk-fieldset"
+                pdk-fieldset=""
+              >
+                <legend
+                  class="govuk-fieldset__legend govuk-fieldset__legend--s"
+                >
+                   Allow cookies that measure website application performance monitoring? 
+                </legend>
+                <pdk-radio-group
+                  class="ng-untouched ng-pristine ng-valid"
+                  name="realUserMonitoring"
+                >
+                  <div
+                    class="govuk-radios"
+                  >
+                    <pdk-radio-button>
+                      <div
+                        class="govuk-radios__item"
+                      >
+                        <input
+                          class="govuk-radios__input"
+                          id="pdk-radio-GENERATED_ID"
+                          name="pdk-radio-group-GENERATED_ID"
+                          type="radio"
+                          value="true"
+                        />
+                        <label
+                          class="govuk-radios__label govuk-label"
+                          for="pdk-radio-GENERATED_ID"
+                          pdk-label=""
+                        >
+                          Use cookies that measure website application performance monitoring
+                        </label>
+                      </div>
+                    </pdk-radio-button>
+                    <pdk-radio-button>
+                      <div
+                        class="govuk-radios__item"
+                      >
+                        <input
+                          class="govuk-radios__input"
+                          id="pdk-radio-GENERATED_ID"
+                          name="pdk-radio-group-GENERATED_ID"
+                          type="radio"
+                          value="false"
+                        />
+                        <label
+                          class="govuk-radios__label govuk-label"
+                          for="pdk-radio-GENERATED_ID"
+                          pdk-label=""
+                        >
+                          Do not use cookies that measure website application performance monitoring
+                        </label>
+                      </div>
+                    </pdk-radio-button>
+                  </div>
+                </pdk-radio-group>
+              </fieldset>
+            </pdk-form-group>
+          </pdk-form-field>
+          <pdk-button-group>
+            <div
+              class="govuk-button-group"
+            >
+              <button
+                class="govuk-button"
+                pdk-button=""
+                type="submit"
+              >
+                Save
+              </button>
+            </div>
+          </pdk-button-group>
+        </form>
+      </app-cookies-preferences-form>
+    </pdk-grid>
+  </pdk-grid>
+</app-cookies>
+`;

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContainerComponent should compile correctly 1`] = `
+<app-home-container
+  userServices$={[Function _Store]}
+>
+  <app-home>
+    <div>
+      <pdk-masthead>
+        <div
+          class="pdk-masthead"
+        >
+          <h1
+            class="govuk-!-margin-top-4 govuk-!-margin-bottom-4 pdk-!-text-color-white govuk-heading-xl"
+            pdk-margin-vertical="4"
+            pdk-text-colour="white"
+            pdk-typography="heading-xlarge"
+          >
+             Home 
+          </h1>
+        </div>
+      </pdk-masthead>
+    </div>
+    <pdk-grid
+      class="govuk-grid-row"
+      container=""
+    >
+      <pdk-grid
+        class="govuk-grid-column-one-third"
+        one-third=""
+      >
+        <div
+          class="home-panel pdk-!-border-color-mid-grey-tint-25 govuk-!-margin-top-6"
+          data-test-id="user-service"
+          pdk-border-colour="mid-grey"
+          pdk-margin-top="6"
+          tint="25"
+        >
+          <div
+            class="pdk-!-fill-color-light-grey govuk-!-padding-3"
+            pdk-fill-colour="light-grey"
+            pdk-padding="3"
+          >
+            <h2
+              class="govuk-!-margin-0 govuk-heading-s"
+              pdk-margin="0"
+              pdk-typography="heading-small"
+            >
+              Single Justice Procedure
+            </h2>
+          </div>
+          <ul
+            class="govuk-!-padding-3 govuk-list"
+            pdk-list=""
+            pdk-padding="3"
+          >
+          </ul>
+        </div>
+      </pdk-grid>
+      <pdk-grid
+        class="govuk-grid-column-one-third"
+        one-third=""
+      >
+        <div
+          class="home-panel pdk-!-border-color-mid-grey-tint-25 govuk-!-margin-top-6"
+          data-test-id="user-service"
+          pdk-border-colour="mid-grey"
+          pdk-margin-top="6"
+          tint="25"
+        >
+          <div
+            class="pdk-!-fill-color-light-grey govuk-!-padding-3"
+            pdk-fill-colour="light-grey"
+            pdk-padding="3"
+          >
+            <h2
+              class="govuk-!-margin-0 govuk-heading-s"
+              pdk-margin="0"
+              pdk-typography="heading-small"
+            >
+              Court proceedings
+            </h2>
+          </div>
+          <ul
+            class="govuk-!-padding-3 govuk-list"
+            pdk-list=""
+            pdk-padding="3"
+          >
+          </ul>
+        </div>
+      </pdk-grid>
+    </pdk-grid>
+  </app-home>
+</app-home-container>
+`;

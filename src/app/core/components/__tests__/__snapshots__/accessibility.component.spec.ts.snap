@@ -1,0 +1,497 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccessibilityComponent should compile 1`] = `
+<app-accessibility>
+  <div
+    class="pdk-!-negative-margin-top-6"
+    pdk-margin-top="-6"
+  >
+    <pdk-masthead>
+      <div
+        class="pdk-masthead"
+      >
+        <span
+          class="pdk-!-text-color-white govuk-body-l"
+          pdk-text-colour="white"
+          pdk-typography="body-large"
+        >
+          Guidance
+        </span>
+        <h1>
+          Accessibility statement for Common Platform websites
+        </h1>
+        <span
+          class="pdk-!-text-color-white govuk-body-l"
+          pdk-text-colour="white"
+          pdk-typography="body-large"
+        >
+          Updated 20 December 2024
+        </span>
+      </div>
+    </pdk-masthead>
+  </div><div
+    class="govuk-!-margin-top-6 govuk-grid-row"
+    container=""
+    pdk-grid=""
+    pdk-margin-top="6"
+  >
+    <div
+      class="govuk-grid-column-one-third"
+      one-third=""
+      pdk-grid=""
+    >
+      <h3
+        class="govuk-heading-s"
+        pdk-typography="heading-small"
+      >
+        Contents
+      </h3>
+      <ul
+        class="govuk-list"
+        pdk-list=""
+      >
+        <li>
+          <a
+            class="govuk-link"
+            href="accessibility#statement"
+            pdk-link=""
+          >
+            Accessibility statement for Common Platform websites
+          </a>
+        </li>
+        <li>
+          <a
+            class="govuk-link"
+            href="accessibility#contact"
+            pdk-link=""
+          >
+            Contacting us by phone or visiting us in person
+          </a>
+        </li>
+        <li>
+          <a
+            class="govuk-link"
+            href="accessibility#enforcement"
+            pdk-link=""
+          >
+            Enforcement procedure
+          </a>
+        </li>
+        <li>
+          <a
+            class="govuk-link"
+            href="accessibility#technical"
+            pdk-link=""
+          >
+            Technical information about this website's accessibility
+          </a>
+        </li>
+        <li>
+          <a
+            class="govuk-link"
+            href="accessibility#compliance"
+            pdk-link=""
+          >
+            Compliance status
+          </a>
+        </li>
+        <li>
+          <a
+            class="govuk-link"
+            href="accessibility#non-accessible"
+            pdk-link=""
+          >
+            Non-accessible content
+          </a>
+        </li>
+        <li>
+          <a
+            class="govuk-link"
+            href="accessibility#improvement"
+            pdk-link=""
+          >
+            What we're doing to improve accessibility
+          </a>
+        </li>
+        <li>
+          <a
+            class="govuk-link"
+            href="accessibility#statement-preparation"
+            pdk-link=""
+          >
+            Preparation of this accessibility statement
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="govuk-grid-column-two-thirds"
+      pdk-grid=""
+      two-thirds=""
+    >
+      <h2
+        class="govuk-heading-l"
+        pdk-typography="heading-large"
+      >
+        <a
+          name="statement"
+        />
+         Accessibility statement for Common Platform websites 
+      </h2>
+      <p>
+         This accessibility statement applies to Common Platform websites. Common Platform is the system for processing criminal cases through the courts. You can view the IdAM (Identity and Access Management) Accessibility Statement which separately manages signing in and user access. ROTA is for magistrates' diary management. 
+      </p>
+      <p>
+         This website is run by HM Courts and Tribunals Service (HMCTS). We want as many people as possible to be able to use this website. For example, that means you should be able to: 
+      </p>
+      <ul
+        class="govuk-list govuk-list--bullet"
+        pdk-list="bullet"
+      >
+        <li>
+          change colours, contrast levels and fonts using browser or device settings
+        </li>
+        <li>
+          zoom in up to 400% without the text spilling off the screen
+        </li>
+        <li>
+          navigate most of the website using a keyboard or speech recognition software
+        </li>
+        <li>
+           listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver) 
+        </li>
+      </ul>
+      <p>
+        We've also made the website text as simple as possible to understand.
+      </p>
+      <p>
+        <a
+          class="govuk-link"
+          href="https://mcmw.abilitynet.org.uk/"
+          pdk-link=""
+          target="_blank"
+        >
+          AbilityNet
+        </a>
+         has advice on making your device easier to use if you have a disability. 
+      </p>
+      <h2
+        class="govuk-!-padding-top-4 govuk-heading-m"
+        pdk-padding-top="4"
+        pdk-typography="heading-medium"
+      >
+        How accessible this website is
+      </h2>
+      <p>
+        We know some parts of this website are not fully accessible, for example:
+      </p>
+      <ul
+        class="govuk-list govuk-list--bullet"
+        pdk-list="bullet"
+      >
+        <li>
+           Case materials cannot be navigated with just a keyboard or by using voice activation. 
+        </li>
+        <li>
+           Allocated hearings, Unallocated Hearings, Unscheduled List and Publish and Download Hearing lists are difficult to navigate using just a keyboard or voice activation. 
+        </li>
+        <li>
+           In Allocated hearings, Unallocated Hearings, Unscheduled List some error messages and status update messages are not communicated to screen readers making navigation very difficult. 
+        </li>
+        <li>
+          Manage Hearings and Edit case are difficult to navigate using a screen reader.
+        </li>
+        <li>
+          Case Management is difficult to navigate using just a keyboard.
+        </li>
+        <li>
+           PDF documents (including third party generated pdfs) are not fully accessible to screen reader users. 
+        </li>
+      </ul>
+      <h2
+        class="govuk-!-padding-top-4 govuk-heading-m"
+        pdk-padding-top="4"
+        pdk-typography="heading-medium"
+      >
+         Feedback and contact information 
+      </h2>
+      <p>
+         If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille: 
+      </p>
+      <p>
+         Email: 
+        <a
+          class="govuk-link"
+          href="mailto:CJSCP-ServiceDesk@hmcts.net"
+          pdk-link=""
+          target="_blank"
+        >
+          CJSCP-ServiceDesk@hmcts.net
+        </a>
+      </p>
+      <p>
+        Telephone: 0203 989 6060
+      </p>
+      <p>
+         You can contact us Monday to Friday 8am to 8pm, Saturday 8am to 2pm (excluding public holidays) 
+      </p>
+      <p>
+         We're always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we're not meeting accessibility requirements, contact us and let us know. 
+      </p>
+      <p>
+        We'll consider your request and get back to you within 10 working days.
+      </p>
+      <h2
+        class="govuk-!-padding-top-5 govuk-heading-l"
+        pdk-padding-top="5"
+        pdk-typography="heading-large"
+      >
+        <a
+          name="contact"
+        />
+         Contacting us by phone or visiting us in person 
+      </h2>
+      <p>
+         We provide a text relay service for people who are D/deaf, hearing impaired or have a speech impediment. 
+      </p>
+      <p>
+         Our offices have audio induction loops, or if you contact us before your visit we can arrange a British Sign Language (BSL) interpreter. 
+      </p>
+      <p>
+         Find out how to contact us at 
+        <a
+          class="govuk-link"
+          href="https://www.gov.uk/find-court-tribunal"
+          pdk-link=""
+          target="_blank"
+        >
+          https://www.gov.uk/find-court-tribunal
+        </a>
+      </p>
+      <h2
+        class="govuk-!-padding-top-5 govuk-heading-l"
+        pdk-padding-top="5"
+        pdk-typography="heading-large"
+      >
+        <a
+          name="enforcement"
+        />
+         Enforcement procedure 
+      </h2>
+      <p>
+         The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the 'accessibility regulations'). If you're not happy with how we respond to your complaint, 
+        <a
+          class="govuk-link"
+          href="https://www.equalityadvisoryservice.com/"
+          pdk-link=""
+          target="_blank"
+        >
+          contact the Equality Advisory and Support Service (EASS).
+        </a>
+      </p>
+      <h2
+        class="govuk-!-padding-top-5 govuk-heading-l"
+        pdk-padding-top="5"
+        pdk-typography="heading-large"
+      >
+        <a
+          name="technical"
+        />
+         Technical information about this website's accessibility 
+      </h2>
+      <p>
+         HMCTS is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018. 
+      </p>
+      <h2
+        class="govuk-!-padding-top-4 govuk-heading-l"
+        pdk-padding-top="4"
+        pdk-typography="heading-large"
+      >
+        <a
+          name="compliance"
+        />
+         Compliance status 
+      </h2>
+      <p>
+         This website is partially compliant with the 
+        <a
+          class="govuk-link"
+          href="https://www.w3.org/TR/WCAG/"
+          pdk-link=""
+          target="_blank"
+        >
+          Web Content Accessibility Guidelines version 2.2
+        </a>
+         AA standard, due to the non-compliances listed below. 
+      </p>
+      <h2
+        class="govuk-!-padding-top-5 govuk-heading-l"
+        pdk-padding-top="5"
+        pdk-typography="heading-large"
+      >
+        <a
+          name="non-accessible"
+        />
+         Non-accessible content 
+      </h2>
+      <p>
+        The content listed below is non-accessible for the following reasons.
+      </p>
+      <h3
+        class="govuk-!-padding-top-4 govuk-heading-m"
+        pdk-padding-top="4"
+        pdk-typography="heading-medium"
+      >
+         Non-compliance with the accessibility regulations 
+      </h3>
+      <p>
+         Some page titles do not describe topic or purpose, so screen reader users will not be able to determine whether they are on the right page from the page title. This fails WCAG 2.2. success criterion 2.4.2 Page Titled. 
+      </p>
+      <p>
+         The focus order of some pages is not intuitive and does not take users to the top of the page, so users of assistive technology may find pages difficult to navigate. This fails WCAG 2.2 success criterion 2.4.3 Focus Order. 
+      </p>
+      <p>
+         Some links have been presented as tabs. When clicked the link will not behave as a tab, but takes users to a new page. This is misleading for screen reader users. This fails WCAG 2.2 success criterion 4.1.2 Name, Role, Value. 
+      </p>
+      <p>
+         There are autocomplete inputs which do not have instructions for screen reader users. This means screen reader users will not know how to interact with the element. On some mobile devices the auto-complete dropdown function does not work at all. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         Elements are not grouped correctly. This means the purpose of some fields in relation to others is unclear, or when multiple fields can be used to answer a question this is not clear. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         Some hidden components have been included in the tab sequence. This means users navigating by a keyboard alone might be unable to locate their position on the page, as they will land on unexpected objects. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships and 2.4.3 Focus Order. 
+      </p>
+      <p>
+         Some labels do not contain the text that is presented visually, so users using voice activation may struggle to reference the component if they speak what they see on the screen. This fails WCAG 2.2. success criterion 2.5.3 Label in Name. 
+      </p>
+      <p>
+         Some tables are not implemented correctly and the layout is inconsistent. This means it will be hard for users of screen readers to access information and take action in the table via navigation commands. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         Some information that is visually displayed in a list has not been marked up as a list. This means screen reader users will not be given this information and won’t know the structure of the information. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         On some pages, skip to main content links don’t skip straight to the main content. This fails WCAG 2.2 success criterion 2.4.1 Bypass Blocks. 
+      </p>
+      <p>
+         Some headings are not implemented correctly, and the heading structure of pages is not always correct. This means screen reader users may not be able to identify the structure of the page or find what they need within it. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         In some fields the user focus moves unexpectedly to the next text input once some text is entered. This fails WCAG 2.2 success criterion 3.2.2. On Input. 
+      </p>
+      <p>
+         Some fields are labelled as optional when they are required. This means users of assistive technologies may not understand why they cannot progress through the form if they leave fields empty. This fails WCAG 2.2 success criterion 3.3.2 Labels or Instructions. 
+      </p>
+      <p>
+         Some inputs do not have a visual label. This means users of assistive technology such as voice activation users will not be able to reference the input and add required information. This fails WCAG 2.2 success criterion 3.3.2 Labels or Instructions. 
+      </p>
+      <p>
+         New content that is introduced to the page is not easily accessible to users of assistive technology as they are not told it has been added, and have to navigate backwards to find it. This fails WCAG 2.2 success criterion 2.4.3 Focus Order. 
+      </p>
+      <p>
+         Some labels are not associated with text input fields, so screen reader users cannot easily understand the purpose of the input without searching through the surrounding page content, and some voice activation users will not be able to enter anything in the field. This fails WCAG 2.2 success criterion 1.2.1 Info and Relationships. 
+      </p>
+      <p>
+         A sub-navigation section has been incorrectly implemented, which means that a screen reader user will not be able to interact with the information within that section. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         Some information will not be read out in the correct order to screen reader users. This fails WCAG 2.2 success criterion 1.3.2 Meaningful Sequence. 
+      </p>
+      <p>
+         Some labels are not associated with text input fields, so screen reader users cannot easily understand the purpose of the input without searching through the surrounding page content, and some voice activation users will not be able to enter anything in the field. This fails WCAG 2.2 success criterion 1.2.1 Info and Relationships. 
+      </p>
+      <p>
+         There is some text that is styled as a heading in bold but is not marked up as a heading. This means that a screen reader user may not be able to understand the boundaries between sections or filter the content navigation via headings. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         Some interactive elements of the page might not be recognised by assistive technology software, for example they cannot be operated via keyboard, screen reader users will not be told they are interactive and voice activation users will be unable to reference and interact with the elements. This fails WCAG 2.2 success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         Some pages have embedded scrollable regions which cannot be accessed by users of assistive technology. This fails WCAG 2.2 success criterion 2.1.1 Keyboard. 
+      </p>
+      <p>
+         Some decorative icons and elements are discoverable to assistive technology which can make navigating the page confusing. This fails WCAG 2.2. success criterion 1.1.1 Non-text Content. 
+      </p>
+      <p>
+         Some pages have multiple links with the same link text. This means users will not always be able to understand the specific purpose and destination of the link. This fails WCAG 2.2. success criterion 2.4.4 Link Purpose. 
+      </p>
+      <p>
+         Some pages have graphical links which do not have descriptive link text. This means users will not always be able to understand the purpose and destination of the link. This fails WCAG 2.2. success criterion 2.4.4 Link Purpose. 
+      </p>
+      <p>
+         A date picker component is used in the service which does not work with some assistive technologies. This means some users will not be able to select a date in the way they expect or as a manual input. This fails WCAG 2.2. success criterion 1.3.1 Info and Relationships. 
+      </p>
+      <p>
+         Some in page links move the users viewport but do not move the keyboard focus to the same area. This means users have to tab through the page to get to where they need to be. This fails WCAG 2.2. success criterion 2.4.3 Focus Order. 
+      </p>
+      <p>
+         Some text, including the 'Home' and 'Sign Out' links have a low colour contrast which might be difficult for visually impaired users to read. This fails WCAG 2.2. success criterion 1.4.3 Contrast. 
+      </p>
+      <p>
+         Error messages are not implemented in a way that enable users of assistive technology to know that there is an error, locate the error, and recover from the error. This fails WCAG 2.2. success criterion 4.1.3. Status Messages. 
+      </p>
+      <p>
+         On some pages it is hard for screen reader users to know whether a search they have made is successful, as they are not given any information to validate their action. This fails WCAG 2.2. success criterion 4.1.3 Status Messages. 
+      </p>
+      <p>
+         Error messages are not descriptive enough to help users to know what to do to recover from errors. This fails WCAG 2.2. success criterion 3.3.3 Error Suggestion. 
+      </p>
+      <p>
+         Some buttons do not have a descriptive accessible name to describe their purpose. This fails WCAG 2.2. success criterion 2.4.6 Headings and Labels. 
+      </p>
+      <p>
+         The labels of some fields are not descriptive enough to help users to know what to enter into the fields. This fails WCAG 2.2. success criterion 2.4.6 Headings and Labels. 
+      </p>
+      <p>
+         On some pages the labels for radio buttons are non-descriptive and repeated, so it’s hard for screen reader users to know which option to select to take an action. This fails WCAG 2.2. success criterion 2.4.6 Headings and Labels. 
+      </p>
+      <p>
+         Some links do not display a focus indicator, so it’s hard for people using keyboard navigation to understand their location and what they are selecting. This fails WCAG 2.2. success criterion 2.4.7 Focus Visible. 
+      </p>
+      <h2
+        class="govuk-!-padding-top-2 govuk-heading-l"
+        pdk-padding-top="2"
+        pdk-typography="heading-large"
+      >
+        <a
+          name="improvement"
+        />
+         What we're doing to improve accessibility 
+      </h2>
+      <p>
+         There is a rolling programme to fix accessibility issues identified through the external audit. The issues identified have been prioritised and teams will begin working on them in November 2024. We plan to fix the remaining issues identified in this statement classed as A or AA requirements and outlined in the section entitled 
+        <b>
+          “Non-compliance with the accessibility regulations”
+        </b>
+         by mid 2025. 
+      </p>
+      <p>
+         We perform regular testing as part of our release process using manual testing with the support of online tools and browser plugins. As part of our commitment to testing we use Keyboard navigation, Screen readers (Mac VoiceOver), Voice Command System (Mac Voice Control), Color Contrast Analyzer, Browser Developer Tools, WAVE by WebAIM and Lighthouse. 
+      </p>
+      <p>
+         The last external audit of Common Platform did not include a review of the PDF’s created by Common Platform. The intention is to conduct an external audit of the PDF’s generated by Common Platform before the next accessibility review. 
+      </p>
+      <h2
+        class="govuk-!-padding-top-5 govuk-heading-l"
+        pdk-padding-top="5"
+        pdk-typography="heading-large"
+      >
+        <a
+          name="statement-preparation"
+        />
+         Preparation of this accessibility statement 
+      </h2>
+      <p>
+         This statement was prepared on 16 September 2019. It was last reviewed on 20 December 2024. 
+      </p>
+      <p>
+         This website was last externally tested on 14th February 2024. The test was carried out by the Digital Accessibility Centre (DAC). 
+      </p>
+      <p>
+         Our external audit tested most of the common user journeys across our services, to cover all our main functionality and user interface patterns. In March 2023 as a result of user feedback our PET QA Team conducted an internal audit specifically covered the user journey for Magistrates viewing their court hearings and using assistive technology. 
+      </p>
+    </div>
+  </div>
+</app-accessibility>
+`;
