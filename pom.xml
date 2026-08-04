@@ -8,7 +8,7 @@
     </parent>
     <groupId>uk.gov.moj.cpp.home</groupId>
     <artifactId>ui-home</artifactId>
-    <version>19.0.7-SNAPSHOT</version>
+    <version>19.0.7-CAD-1052-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
         <protractor.baseUrl>http://localhost:4650</protractor.baseUrl>
