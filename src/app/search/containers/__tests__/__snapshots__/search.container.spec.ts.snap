@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchContainerComponent should compile correctly 1`] = `
+<app-search-container
+  breadcrumbs={[Function Array]}
+  initialFormValues$={[Function _Store]}
+  pageSize$={[Function _Store]}
+  redirectTo={[Function Function]}
+  route={[Function ActivatedRoute]}
+  router={[Function _Router]}
+  searchResults$={[Function _Store]}
+  startFrom$={[Function _Store]}
+  store={[Function _Store]}
+  totalResults$={[Function _Store]}
+  wofdWarningService={[Function Object]}
+>
+  <app-search>
+     breadcrumbs: [
+    {
+      "href": "/",
+      "label": "Home",
+      "active": false
+    },
+    {
+      "href": null,
+      "label": "Search",
+      "active": true
+    }
+  ]
+    <br />
+     initialFormValues: {
+    "caseStatus": [
+      "ACTIVE"
+    ],
+    "caseReference": "*",
+    "partyLastNameOrOrganisationName": "*",
+    "partyAddress": "*",
+    "partyPostcode": "*",
+    "partyDateOfBirth": "1978-01-01",
+    "hearingDateFrom": "2019-01-01",
+    "hearingDateTo": "2019-01-02",
+    "sjp": true,
+    "crownCourt": true,
+    "magistrateCourt": true,
+    "sortBySjpNoticeServed": "asc",
+    "hearingType": {
+      "id": "TYPE001",
+      "hearingDescription": "A"
+    },
+    "organisationUnit": {
+      "id": "COURT001",
+      "oucodeL3Name": "A"
+    },
+    "partyTypes": [
+      "DEFENDANT",
+      "APPLICANT"
+    ],
+    "prosecutor": {
+      "id": "PROSECUTOR001",
+      "shortName": "TFL"
+    }
+  }
+    <br />
+     pageSize: 10
+    <br />
+     results: [
+    {
+      "caseId": "*"
+    }
+  ]
+    <br />
+     startFrom: 20
+    <br />
+     totalResults: 25
+    <br />
+  </app-search>
+</app-search-container>
+`;

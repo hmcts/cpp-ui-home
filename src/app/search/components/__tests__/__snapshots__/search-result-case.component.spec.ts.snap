@@ -1,0 +1,2516 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResultCaseComponent [TO_DEPRECATE] when the case belongs to SPI should compile correctly 1`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB123456789
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-crown-court-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Address
+                </dt>
+                <dd>
+                  Address line one, Address line two, CR0 0NO
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent SearchResultCaseComponent -> Filter completed application should compile correctly 1`] = `
+<app-search-result-case
+  addressId={[Function String]}
+  addressesExpanded="false"
+  contentExpanded="false"
+  contentId={[Function String]}
+  postalReply={[Function OutputEmitterRef]}
+  result={[Function Function]}
+  summaryId={[Function String]}
+  viewApplicationAtAGlance={[Function OutputEmitterRef]}
+  viewCrownCourtCase={[Function OutputEmitterRef]}
+  viewSjpCase={[Function OutputEmitterRef]}
+>
+  <section
+    class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+    pdk-border-colour="mid-grey"
+    pdk-margin-bottom="5"
+  >
+    <header
+      class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+      pdk-fill-colour="light-grey"
+      pdk-padding-bottom="1"
+      pdk-padding-horizontal="6"
+      pdk-padding-top="2"
+    >
+      <button
+        class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue"
+        pdk-focusable=""
+        pdk-margin-bottom="1"
+        pdk-padding-left="4"
+        pdk-text-colour="blue"
+        pdk-text-hover-colour="dark-blue"
+        pdk-typography="body-medium"
+      >
+        <span
+          class="app-search-result__toggle-text"
+        >
+        </span>
+      </button>
+    </header>
+    <div
+      class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+      pdk-padding-horizontal="6"
+    >
+      <div
+        aria-label="Parties"
+      >
+      </div>
+      <pdk-inset-text
+        class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+        pdk-padding-right="0"
+        pdk-padding-vertical="0"
+      >
+        <div
+          class="govuk-inset-text"
+        >
+          <dl
+            class="app-search-result__metadata"
+          >
+            <div
+              class="govuk-!-margin-bottom-4"
+              pdk-margin-bottom="4"
+            >
+              <dt>
+                Prosecutor
+              </dt>
+              <dd>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </pdk-inset-text>
+    </div>
+  </section>
+</app-search-result-case>
+`;
+
+exports[`SearchResultCaseComponent when the case belongs to sjp should compile correctly 1`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB123456789
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-sjp-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View SJP case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Address
+                </dt>
+                <dd>
+                  Address line one, Address line two, CR0 0NO
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Notice served date
+                </dt>
+                <dd>
+                  2 January 2019
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case belongs to sjp should compile with a link to enter and upload postal reply depending on the case status 1`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB123456789
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-sjp-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View SJP case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Address
+                </dt>
+                <dd>
+                  Address line one, Address line two, CR0 0NO
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Notice served date
+                </dt>
+                <dd>
+                  2 January 2019
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+        <div
+          class="govuk-!-margin-bottom-4"
+          pdk-margin-bottom="4"
+        >
+          <a
+            class="govuk-link"
+            data-test-id="handle-postal-reply"
+            href="javascript:void(0)"
+            pdk-link=""
+          >
+             Upload and enter postal reply 
+          </a>
+        </div>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case belongs to sjp should compile with a link to enter and upload postal reply depending on the case status 2`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB123456789
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-sjp-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View SJP case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Address
+                </dt>
+                <dd>
+                  Address line one, Address line two, CR0 0NO
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Notice served date
+                </dt>
+                <dd>
+                  2 January 2019
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+        <div
+          class="govuk-!-margin-bottom-4"
+          pdk-margin-bottom="4"
+        >
+          <a
+            class="govuk-link"
+            data-test-id="handle-postal-reply"
+            href="javascript:void(0)"
+            pdk-link=""
+          >
+             Upload and enter postal reply 
+          </a>
+        </div>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case belongs to sjp should compile with a link to enter and upload postal reply depending on the case status 3`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB123456789
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-sjp-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View SJP case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Address
+                </dt>
+                <dd>
+                  Address line one, Address line two, CR0 0NO
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Notice served date
+                </dt>
+                <dd>
+                  2 January 2019
+                </dd>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case does belongs to crown court should compile correctly when all hearings have elapsed 1`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB987654321
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-crown-court-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <button
+          aria-controls=" app-search-result-case-address-GENERATED_ID-0 app-search-result-case-address-GENERATED_ID-1 app-search-result-case-address-GENERATED_ID-2"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-top-2 govuk-!-margin-bottom-0 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable"
+          id="app-search-result-case-address-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="0"
+          pdk-margin-top="2"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            View addresses
+          </span>
+        </button>
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-1"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-2"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                -
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+        <details
+          class="govuk-!-margin-bottom-4 govuk-details"
+          pdk-details=""
+          pdk-margin-bottom="4"
+        >
+          <summary
+            class="govuk-details__summary"
+          >
+            <span
+              class="govuk-details__summary-text"
+            >
+              Applications
+            </span>
+          </summary>
+          <ul
+            class="govuk-!-margin-top-4 govuk-list"
+            pdk-list=""
+            pdk-margin-top="4"
+          >
+            <li>
+              <a
+                class="govuk-link"
+                data-test-id="view-application-at-a-glance"
+                href="javascript:void(0)"
+                pdk-link=""
+              >
+                 Application for witness summons 
+              </a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case does belongs to crown court should compile correctly when the next hearing takes place over several days 1`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB987654321
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-crown-court-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <button
+          aria-controls=" app-search-result-case-address-GENERATED_ID-0 app-search-result-case-address-GENERATED_ID-1 app-search-result-case-address-GENERATED_ID-2"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-top-2 govuk-!-margin-bottom-0 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable"
+          id="app-search-result-case-address-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="0"
+          pdk-margin-top="2"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            View addresses
+          </span>
+        </button>
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-1"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-2"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                -
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="app-search-result__row govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <div
+                  class="govuk-!-margin-right-2"
+                  pdk-margin-right="2"
+                >
+                  <dt>
+                    Next hearing
+                  </dt>
+                  <dd>
+                    Hearing type label 1
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="govuk-visually-hidden"
+                    pdk-visually-hidden=""
+                  >
+                    First hearing date
+                  </dt>
+                  <dd>
+                    From  31 December 2018
+                  </dd>
+                </div>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+        <details
+          class="govuk-!-margin-bottom-4 govuk-details"
+          pdk-details=""
+          pdk-margin-bottom="4"
+        >
+          <summary
+            class="govuk-details__summary"
+          >
+            <span
+              class="govuk-details__summary-text"
+            >
+              Applications
+            </span>
+          </summary>
+          <ul
+            class="govuk-!-margin-top-4 govuk-list"
+            pdk-list=""
+            pdk-margin-top="4"
+          >
+            <li>
+              <a
+                class="govuk-link"
+                data-test-id="view-application-at-a-glance"
+                href="javascript:void(0)"
+                pdk-link=""
+              >
+                 Application for witness summons 
+              </a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case does belongs to crown court should compile correctly when there are no applications 1`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB987654321
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-crown-court-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <button
+          aria-controls=" app-search-result-case-address-GENERATED_ID-0 app-search-result-case-address-GENERATED_ID-1 app-search-result-case-address-GENERATED_ID-2"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-top-2 govuk-!-margin-bottom-0 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable"
+          id="app-search-result-case-address-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="0"
+          pdk-margin-top="2"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            View addresses
+          </span>
+        </button>
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-1"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-2"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                -
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="app-search-result__row govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <div
+                  class="govuk-!-margin-right-2"
+                  pdk-margin-right="2"
+                >
+                  <dt>
+                    Next hearing
+                  </dt>
+                  <dd>
+                    Hearing type label 1
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="govuk-visually-hidden"
+                    pdk-visually-hidden=""
+                  >
+                    First hearing date
+                  </dt>
+                  <dd>
+                    From  17 September 2019
+                  </dd>
+                </div>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case does belongs to crown court should compile correctly when there are no applications 2`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB987654321
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-crown-court-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <button
+          aria-controls=" app-search-result-case-address-GENERATED_ID-0 app-search-result-case-address-GENERATED_ID-1 app-search-result-case-address-GENERATED_ID-2"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-top-2 govuk-!-margin-bottom-0 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable"
+          id="app-search-result-case-address-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="0"
+          pdk-margin-top="2"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            View addresses
+          </span>
+        </button>
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-1"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-2"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                -
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="app-search-result__row govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <div
+                  class="govuk-!-margin-right-2"
+                  pdk-margin-right="2"
+                >
+                  <dt>
+                    Next hearing
+                  </dt>
+                  <dd>
+                    Hearing type label 1
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="govuk-visually-hidden"
+                    pdk-visually-hidden=""
+                  >
+                    First hearing date
+                  </dt>
+                  <dd>
+                    From  17 September 2019
+                  </dd>
+                </div>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case does belongs to crown court should compile correctly when there are no hearings 1`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB987654321
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-crown-court-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <button
+          aria-controls=" app-search-result-case-address-GENERATED_ID-0 app-search-result-case-address-GENERATED_ID-1 app-search-result-case-address-GENERATED_ID-2"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-top-2 govuk-!-margin-bottom-0 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable"
+          id="app-search-result-case-address-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="0"
+          pdk-margin-top="2"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            View addresses
+          </span>
+        </button>
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-1"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-2"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                -
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+        <details
+          class="govuk-!-margin-bottom-4 govuk-details"
+          pdk-details=""
+          pdk-margin-bottom="4"
+        >
+          <summary
+            class="govuk-details__summary"
+          >
+            <span
+              class="govuk-details__summary-text"
+            >
+              Applications
+            </span>
+          </summary>
+          <ul
+            class="govuk-!-margin-top-4 govuk-list"
+            pdk-list=""
+            pdk-margin-top="4"
+          >
+            <li>
+              <a
+                class="govuk-link"
+                data-test-id="view-application-at-a-glance"
+                href="javascript:void(0)"
+                pdk-link=""
+              >
+                 Application for witness summons 
+              </a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;
+
+exports[`SearchResultCaseComponent when the case does belongs to crown court should compile correctly when there is a next hearing 1`] = `
+<app-search-result-case-test
+  postalReply={[Function Function]}
+  result={[Function Object]}
+  viewApplicationAtAGlance={[Function Function]}
+  viewCrownCourtCase={[Function Function]}
+  viewSjpCase={[Function Function]}
+>
+  <app-search-result-case>
+    <section
+      class="app-search-result pdk-!-border-color-mid-grey govuk-!-margin-bottom-5"
+      pdk-border-colour="mid-grey"
+      pdk-margin-bottom="5"
+    >
+      <header
+        class="app-search-result__header pdk-!-fill-color-light-grey govuk-!-padding-top-2 govuk-!-padding-bottom-1 govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-fill-colour="light-grey"
+        pdk-padding-bottom="1"
+        pdk-padding-horizontal="6"
+        pdk-padding-top="2"
+      >
+        <button
+          aria-controls="app-search-result-case-content-GENERATED_ID"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-bottom-1 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable govuk-body-m"
+          id="app-search-result-case-summary-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="1"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          pdk-typography="body-medium"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            URN GB987654321
+          </span>
+        </button>
+        <a
+          class="app-search-result__header-link govuk-!-margin-left-6 govuk-link"
+          data-test-id="view-crown-court-case"
+          href="javascript:void(0)"
+          pdk-link=""
+          pdk-margin-left="6"
+        >
+          View case
+        </a>
+      </header>
+      <div
+        class="govuk-!-padding-left-6 govuk-!-padding-right-6"
+        pdk-padding-horizontal="6"
+      >
+        <button
+          aria-controls=" app-search-result-case-address-GENERATED_ID-0 app-search-result-case-address-GENERATED_ID-1 app-search-result-case-address-GENERATED_ID-2"
+          aria-expanded="false"
+          class="app-search-result__toggle govuk-!-margin-top-2 govuk-!-margin-bottom-0 govuk-!-padding-left-4 pdk-!-text-color-blue pdk-!-text-color-hover-dark-blue pdk-focusable"
+          id="app-search-result-case-address-GENERATED_ID"
+          pdk-focusable=""
+          pdk-margin-bottom="0"
+          pdk-margin-top="2"
+          pdk-padding-left="4"
+          pdk-text-colour="blue"
+          pdk-text-hover-colour="dark-blue"
+          tabindex="0"
+        >
+          <span
+            class="app-search-result__toggle-text"
+          >
+            View addresses
+          </span>
+        </button>
+        <div
+          aria-label="Parties"
+        >
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-0"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                Address line one, Address line two, CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-1"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                CR0 0NO
+              </dd>
+            </div>
+          </dl>
+          <dl>
+            <div
+              class="app-search-result__row"
+            >
+              <div
+                class="govuk-!-margin-right-2"
+                pdk-margin-right="2"
+              >
+                <dt
+                  class="govuk-visually-hidden"
+                  pdk-visually-hidden=""
+                >
+                  Party name
+                </dt>
+                <dd>
+                  Lydia HANSON Pyrami
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Date of birth
+                </dt>
+                <dd>
+                  4 December 1959
+                </dd>
+              </div>
+            </div>
+            <div
+              class="app-search-result__content"
+            >
+              <dt
+                class="govuk-visually-hidden"
+                id="app-search-result-case-address-GENERATED_ID-2"
+                pdk-visually-hidden=""
+              >
+                Address
+              </dt>
+              <dd>
+                -
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <pdk-inset-text
+          aria-labelledby="app-search-result-case-summary-GENERATED_ID"
+          class="app-search-result__content govuk-!-padding-top-0 govuk-!-padding-bottom-0 govuk-!-padding-right-0"
+          id="app-search-result-case-content-GENERATED_ID"
+          pdk-padding-right="0"
+          pdk-padding-vertical="0"
+        >
+          <div
+            class="govuk-inset-text"
+          >
+            <dl
+              class="app-search-result__metadata"
+            >
+              <div
+                class="app-search-result__row govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <div
+                  class="govuk-!-margin-right-2"
+                  pdk-margin-right="2"
+                >
+                  <dt>
+                    Next hearing
+                  </dt>
+                  <dd>
+                    Hearing type label 1
+                  </dd>
+                </div>
+                <div>
+                  <dt
+                    class="govuk-visually-hidden"
+                    pdk-visually-hidden=""
+                  >
+                    First hearing date
+                  </dt>
+                  <dd>
+                    From  17 September 2019
+                  </dd>
+                </div>
+              </div>
+              <div
+                class="govuk-!-margin-bottom-4"
+                pdk-margin-bottom="4"
+              >
+                <dt>
+                  Prosecutor
+                </dt>
+                <dd>
+                  CPS
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </pdk-inset-text>
+        <details
+          class="govuk-!-margin-bottom-4 govuk-details"
+          pdk-details=""
+          pdk-margin-bottom="4"
+        >
+          <summary
+            class="govuk-details__summary"
+          >
+            <span
+              class="govuk-details__summary-text"
+            >
+              Applications
+            </span>
+          </summary>
+          <ul
+            class="govuk-!-margin-top-4 govuk-list"
+            pdk-list=""
+            pdk-margin-top="4"
+          >
+            <li>
+              <a
+                class="govuk-link"
+                data-test-id="view-application-at-a-glance"
+                href="javascript:void(0)"
+                pdk-link=""
+              >
+                 Application for witness summons 
+              </a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
+  </app-search-result-case>
+</app-search-result-case-test>
+`;

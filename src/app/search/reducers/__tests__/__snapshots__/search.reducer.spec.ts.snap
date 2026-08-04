@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search reducer SearchActions.loadUnifiedSearchCasesSuccess should add a pending request 1`] = `
+{
+  "cases": [
+    {
+      "caseId": "*",
+    },
+  ],
+  "params": {
+    "pageSize": 10,
+  },
+  "totalResults": 1,
+}
+`;
+
+exports[`search reducer SearchActions.resetSearch should reset an existing search 1`] = `
+{
+  "cases": [],
+  "params": {
+    "boxWorkHearing": false,
+    "pageSize": 0,
+  },
+  "totalResults": -1,
+}
+`;
+
+exports[`search reducer undefined action should return the default state 1`] = `
+{
+  "cases": [],
+  "params": {
+    "pageSize": 0,
+  },
+  "totalResults": -1,
+}
+`;

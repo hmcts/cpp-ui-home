@@ -1,0 +1,106 @@
+import { Component } from '@angular/core';
+import { PdkCore, PdkGrid } from '@cpp/pdk';
+
+@Component({
+  template: `
+    <pdk-grid container>
+      <pdk-grid two-thirds>
+        <h1 pdk-typography="heading-xlarge">
+          Terms &amp; Conditions (including Acceptable Use) for Users of the CJS Common Platform
+          Service
+        </h1>
+        <p pdk-typography="body-large">
+          The CJS Common Platform (CJS CP) SERVICE is supplied to individual users (The User) in
+          accordance with the Terms & Conditions set out below. The User understands that continued
+          use of the Service will be taken as acceptance of these Terms & Conditions and that they
+          are fully aware of responsibilities in relation to the use of the service, confirming
+          that:
+        </p>
+        <ol pdk-list="number">
+          <li>I have a legitimate need to use CJS CP Service.</li>
+          <li>
+            I will comply with the UK Data Protection Act 2018, relevant privacy regulations
+            (including ICO codes of conduct) and all professional codes of conduct by which I am
+            bound and that all information transmitted through the CJS CP Service is treated
+            accordingly. I acknowledge that any breach of these provisions may result in my access
+            to CJS CP Service being suspended or terminated.
+          </li>
+          <li>
+            I will seek to prevent inadvertent disclosure of information, for example by not
+            forwarding information to unauthorised contacts, and by taking care when working on or
+            printing information related to the CJS CP Service.
+          </li>
+          <li>
+            I will be responsible for the secure use of the unique credentials issued to me by the
+            CJS CP Service (e.g. user ID and passwords), in particular that I must:
+            <ul pdk-list="bullet">
+              <li>protect and not share the CJS CP credentials for access to the service</li>
+              <li>
+                when one-time pass codes are applicable, use a mobile phone number unique to me
+              </li>
+              <li>
+                report actual or suspected disclosure of this information immediately to the CJS CP
+                Business Support Helpdesk
+              </li>
+              <li>not use another person's credentials to access the CJS CP Service.</li>
+            </ul>
+          </li>
+          <li>
+            I will ensure that devices (including computers, tablets and mobile devices) connected
+            to the CJS CP Service will be kept secure, for example by being locked when not in use
+            and the data secured through encryption and/or protected access (e.g. password or
+            similar).
+          </li>
+          <li>
+            I will not make false claims or denials relating to use of the CJS CP Service (e.g.
+            falsely denying any access, editing, reproduction or viewing of digital case material).
+          </li>
+          <li>
+            I will always check that the recipients of CJS CP information are authorised to do so
+            and that information is not accidentally or deliberately released to any unauthorised
+            third party.
+          </li>
+          <li>
+            I will only access the service from devices that have appropriate security controls
+            installed, enabled and up to date (including, as appropriate, firewalls, anti-virus &
+            spyware software, encryption of data and operating system security patches).
+          </li>
+          <li>I will not attempt to bypass or subvert system access security controls.</li>
+          <li>
+            When using WiFi, I will only access the service through secure Internet access. I will
+            not automatically 'trust' or 'accept' invalid security certificates for web sites.
+          </li>
+          <li>
+            I will only connect to CJS CP Service from within the UK or the European Economic Area
+            (EEA) and will not attempt to access the CJS CP IdAM Service from a location that is
+            outside the UK or EEA.
+          </li>
+          <li>
+            I understand that Her Majesty's Courts and Tribunals Service, an executive agency of the
+            Ministry of Justice, reserves the right to audit my usage and investigate security
+            incidents and confirm that, should such an investigation be necessary, I will provide
+            any necessary support to the best of my ability.
+          </li>
+          <li>
+            I will use the CJS CP service in accordance with the appropriate user guides and agree
+            to notify the CP Service immediately if there should be any change in my circumstances
+            or role that effect my access to CP Services. This includes (but is not limited to)
+            changes to my circumstances or role so that certain levels of access are no longer
+            appropriate.
+          </li>
+          <li>
+            In the event of a suspected breach of this agreement, Her Majesty's Courts and Tribunals
+            Service, an executive agency of the Ministry of Justice, reserves the right to
+            investigate and, if a breach has occurred, to impose appropriate sanctions. This can
+            range from a warning and instructions to improve practice, to temporary suspension or
+            reduction in service availability, to the potential complete withdrawal of service
+            should the breach impact adversely other users of the service and the integrity of the
+            trust framework within which the IdAM Service operates.
+          </li>
+        </ol>
+      </pdk-grid>
+    </pdk-grid>
+  `,
+  imports: [PdkGrid, PdkCore],
+})
+export class TermsComponent {}
