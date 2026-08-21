@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CookiesPreferences, CookiesService } from '@cpp/core';
+import { provideMockStore } from '@ngrx/store/testing';
 import { CookiesComponent } from '../cookies.component';
 
 describe('Cookies', () => {
@@ -22,35 +23,38 @@ describe('Cookies', () => {
 
     TestBed.configureTestingModule({
       providers: [
+        provideMockStore({
+          initialState: { config: { appConfig: { gaMeasurementId: 'TEST_MEASUREMENT_ID' } } }
+        }),
         {
           provide: ActivatedRoute,
           useValue: {
             snapshot: {
               queryParamMap: {
-                get: (key: string) => (key === 'referrer' ? referrer : null),
-              },
-            },
-          },
+                get: (key: string) => (key === 'referrer' ? referrer : null)
+              }
+            }
+          }
         },
         {
           provide: Router,
           useValue: {
-            navigateByUrl,
-          },
+            navigateByUrl
+          }
         },
         {
           provide: CookiesService,
           useValue: {
             getAllCookiePreferences: (): CookiesPreferences => {
               return {
-                realUserMonitoring: true,
+                realUserMonitoring: true
               };
             },
             restart,
-            setAllCookiePreferences,
-          },
-        },
-      ],
+            setAllCookiePreferences
+          }
+        }
+      ]
     });
     fixture = TestBed.createComponent(CookiesComponent);
     fixture.detectChanges();
@@ -63,7 +67,7 @@ describe('Cookies', () => {
     window.location = {
       set href(url: string) {
         location(url);
-      },
+      }
     } as Location & string;
   };
 
