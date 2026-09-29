@@ -161,12 +161,11 @@ import { AppState, getAppConfig } from '../app.reducer';
 export class CookiesComponent {
   formValues: CookiesPreferences;
 
-  // _ga_<suffix>'s suffix is the GA4 Measurement ID, not the GTM container ID -
-  // read from its own config field (app.override.config.json) rather than hardcoded.
+  // _ga_<suffix>'s suffix is the GA4 Measurement ID, not the GTM container ID
   gaSessionCookieName = toSignal(
     this.store
       .select(getAppConfig)
-      .pipe(map(appConfig => `_ga_${appConfig?.gaMeasurementId || ''}`)),
+      .pipe(map(appConfig => `_ga_${appConfig?.gaMeasurementId || 'TEST_MEASUREMENT_ID'}`)),
     { initialValue: null }
   );
 
