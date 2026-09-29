@@ -4,4 +4,5 @@ export interface AppConfig {
   idamProfilePage: string;
   idamServicesPage: string;
   idamLogoutPage: string;
+  gaMeasurementId?: string;
 }
