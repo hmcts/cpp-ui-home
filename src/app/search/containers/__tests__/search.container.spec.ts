@@ -34,6 +34,7 @@ import { JsonPipe } from '@angular/common';
 describe('SearchContainerComponent', () => {
   let fixture: ComponentFixture<SearchContainerComponent>;
   let redirectTo: jest.Mock;
+  let windowOpenSpy: jest.SpyInstance;
   let router: Router;
   let store: Store<AppState>;
   let wofdWarningService: { isWofdApplication: jest.Mock; showModal: jest.Mock };
@@ -61,6 +62,7 @@ describe('SearchContainerComponent', () => {
 
   beforeEach(() => {
     redirectTo = jest.fn();
+    windowOpenSpy = jest.spyOn(window, 'open').mockImplementation(() => null);
 
     TestBed.configureTestingModule({
       providers: [
@@ -240,8 +242,10 @@ describe('SearchContainerComponent', () => {
       .query(By.directive(SearchMockComponent))
       .componentInstance.viewCrownCourtCase.emit(mockThree);
 
-    expect(redirectTo).toHaveBeenCalledWith(
-      `/prosecution-casefile/case-at-a-glance/${mockThree.caseId}`
+    expect(window.open).toHaveBeenCalledWith(
+      `/prosecution-casefile/case-at-a-glance/${mockThree.caseId}`,
+      '_blank',
+      'noreferrer'
     );
   });
 
@@ -329,7 +333,11 @@ describe('SearchContainerComponent', () => {
       .query(By.directive(SearchMockComponent))
       .componentInstance.viewSjpCase.emit(mockFour);
 
-    expect(redirectTo).toHaveBeenCalledWith(`/sjp/court-admin/case-overview/${mockFour.caseId}`);
+    expect(window.open).toHaveBeenCalledWith(
+      `/sjp/court-admin/case-overview/${mockFour.caseId}`,
+      '_blank',
+      'noreferrer'
+    );
   });
 
   it('should handle a `viewSjpCase` event for a legal adviser', () => {
@@ -345,7 +353,11 @@ describe('SearchContainerComponent', () => {
       .query(By.directive(SearchMockComponent))
       .componentInstance.viewSjpCase.emit(mockFour);
 
-    expect(redirectTo).toHaveBeenCalledWith(`/sjp/legal-adviser/case-overview/${mockFour.caseId}`);
+    expect(window.open).toHaveBeenCalledWith(
+      `/sjp/legal-adviser/case-overview/${mockFour.caseId}`,
+      '_blank',
+      'noreferrer'
+    );
   });
 
   it('should hande a `search` event', () => {
