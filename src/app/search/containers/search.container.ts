@@ -175,17 +175,15 @@ export class SearchContainerComponent {
   }
 
   handleViewCrownCourtCase({ caseId }: UnifiedSearchCase) {
-    this.redirectTo(`/prosecution-casefile/case-at-a-glance/${caseId}`);
+    window.open(`/prosecution-casefile/case-at-a-glance/${caseId}`, '_blank', 'noreferrer');
   }
 
   handleViewSjpCase({ caseId }: UnifiedSearchCase) {
-    // This is the handling for SJP cases when the new SJP UI goes live:
     this.store.pipe(select(getUserGroups), take(1)).subscribe(groups => {
       const role = groups!.find(group => group.groupName === 'Legal Advisers')
         ? 'legal-adviser'
         : 'court-admin';
-
-      this.redirectTo(`/sjp/${role}/case-overview/${caseId}`);
+      window.open(`/sjp/${role}/case-overview/${caseId}`, '_blank', 'noreferrer');
     });
   }
 
