@@ -19,18 +19,18 @@ describe('SearchComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [SearchComponent],
-      declarations: [SearchTestComponent],
+      declarations: [SearchTestComponent]
     }).overrideComponent(SearchComponent, {
       remove: {
-        imports: [SearchFormComponent, SearchResultCaseComponent, SearchResultApplicationComponent],
+        imports: [SearchFormComponent, SearchResultCaseComponent, SearchResultApplicationComponent]
       },
       add: {
         imports: [
           SearchFormMockComponent,
           SearchResultCaseMockComponent,
-          SearchResultApplicationMockComponent,
-        ],
-      },
+          SearchResultApplicationMockComponent
+        ]
+      }
     });
 
     fixture = TestBed.createComponent(SearchTestComponent);
@@ -83,7 +83,7 @@ describe('SearchComponent', () => {
     beforeEach(() => {
       fixture.componentInstance.totalResults = 1;
       fixture.componentInstance.results = [
-        { caseId: '*', caseType: 'APPLICATION' },
+        { caseId: '*', caseType: 'APPLICATION' }
       ] as UnifiedSearchCase[];
       fixture.detectChanges();
     });
@@ -106,7 +106,7 @@ describe('SearchComponent', () => {
     beforeEach(() => {
       fixture.componentInstance.totalResults = 1;
       fixture.componentInstance.results = [
-        { caseId: '*', caseType: 'PROSECUTION' },
+        { caseId: '*', caseType: 'PROSECUTION' }
       ] as UnifiedSearchCase[];
       fixture.detectChanges();
     });
@@ -171,6 +171,27 @@ describe('SearchComponent', () => {
     });
   });
 
+  describe.each(['2025/1234567D', '20251234567D'])(
+    'when searching for a case by PNC ID "%s"',
+    (pncId: string) => {
+      it('should display the PNC ID warning message when there are no results', () => {
+        fixture.componentInstance.totalResults = 0;
+        fixture.componentInstance.initialFormValues = { pncId };
+        fixture.detectChanges();
+
+        expect(fixture).toMatchSnapshot();
+      });
+
+      it('should display the PNC ID warning message when there are results', () => {
+        fixture.componentInstance.totalResults = 11;
+        fixture.componentInstance.initialFormValues = { pncId };
+        fixture.detectChanges();
+
+        expect(fixture).toMatchSnapshot();
+      });
+    }
+  );
+
   @Component({
     selector: 'app-search-test',
     template: `
@@ -192,7 +213,7 @@ describe('SearchComponent', () => {
       >
       </app-search>
     `,
-    standalone: false,
+    standalone: false
   })
   class SearchTestComponent {
     breadcrumbs: Breadcrumb[] = [{ label: 'Home', href: '/' }];
@@ -214,7 +235,7 @@ describe('SearchComponent', () => {
   @Component({
     selector: 'app-search-form',
     template: ` {{ initialValues() | json }} `,
-    imports: [JsonPipe],
+    imports: [JsonPipe]
   })
   class SearchFormMockComponent {
     initialValues = input<SearchFormValues | undefined>(undefined);
@@ -228,7 +249,7 @@ describe('SearchComponent', () => {
   @Component({
     selector: 'app-search-result-application',
     template: ` {{ result() | json }} `,
-    imports: [JsonPipe],
+    imports: [JsonPipe]
   })
   class SearchResultApplicationMockComponent {
     result = input.required<UnifiedSearchCase>();
@@ -238,7 +259,7 @@ describe('SearchComponent', () => {
   @Component({
     selector: 'app-search-result-case',
     template: ` {{ result() | json }} `,
-    imports: [JsonPipe],
+    imports: [JsonPipe]
   })
   class SearchResultCaseMockComponent {
     result = input.required<UnifiedSearchCase>();
