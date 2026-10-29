@@ -45,7 +45,10 @@ import { SearchResultCaseComponent } from './search-result-case.component';
           @if (totalResults() === 0) { There are no matching results. Try removing filters or
           double-checking your spelling. } @if (totalResults() > 0) {
           {{ totalResults() }} result{{ totalResults() !== 1 ? 's' : '' }}
-          }
+          } @if (initialValues.pncId) {
+          <br /><br />
+          If the PNC ID you are looking for is not in the search results, check that you have the
+          correct ID. In some cases a PNC ID may not have been created. }
         </pdk-inset-text>
         } @for (result of results(); track result.caseReference) {
         <div data-test-id="search-result">
@@ -111,6 +114,10 @@ export class SearchComponent {
 
   get currentPage(): number {
     return this.startFrom() / this.pageSize() + 1;
+  }
+
+  get initialValues(): SearchFormValues {
+    return this.initialFormValues() ? JSON.parse(JSON.stringify(this.initialFormValues())) : {};
   }
 
   handlePageChange(page: number) {
