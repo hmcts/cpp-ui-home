@@ -149,10 +149,7 @@ describe('SearchGuard', () => {
       'TEST',
       'SJ123456789',
       // Values which are almost valid PNC IDs.
-      '21234567T',
-      '2012345678T',
       '211234567TQ',
-      '2011234567T',
       '201712345678T',
       '201234567TQ',
       '171234567I',
@@ -218,6 +215,13 @@ describe('SearchGuard', () => {
       '17_1234567T',
       '17.1234567T',
       "17'1234567T",
+      // Input has omitted zeroes:
+      '21234567T',
+      '2123456T',
+      '212345T',
+      '21234T',
+      '21/123A',
+      '21/0123A',
       // Input is an exact year; use as-is:
       '20171234567T',
       '2017/1234567T',
