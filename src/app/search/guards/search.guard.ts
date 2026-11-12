@@ -10,7 +10,7 @@ import { parseFormValues } from '../../core/util/form';
 import { getUserHasPermission } from '@cpp/users-groups';
 import { EXPECTED_HOME_USER_PERMISSIONS, HomeUserPermissions } from '../../config';
 
-const PNC_ID_PATTERN = /^(\d{2}(\d{2})?)[\/',.\-_]?(\d{7}[A-HJ-NP-RT-Z])$/i;
+const PNC_ID_PATTERN = /^(\d{2}|\d{4})[\/',.\-_]?(\d{1,7}[A-HJ-NP-RT-Z])$/i;
 
 @Injectable()
 export class SearchGuard {
