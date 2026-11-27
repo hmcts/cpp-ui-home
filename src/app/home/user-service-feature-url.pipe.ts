@@ -56,7 +56,8 @@ const serviceFeatureMap: Record<string, string> = {
   'courtscheduler-view': '/courtscheduler/view',
   'courtscheduler-manageJudiciaryItinerary': '/courtscheduler/manage-judicial-itinerary',
   'crime-platform-audit': '/audit-reports/create',
-  'manage-your-complaints-files': '/prosecutor/manage-your-complaints-files'
+  'manage-your-complaints-files': '/prosecutor/manage-your-complaints-files',
+  'courtscheduler-week-commencing-create': 'courtscheduler/create-week-commencing'
 };
 
 @Pipe({ name: 'userServiceFeatureUrl' })
